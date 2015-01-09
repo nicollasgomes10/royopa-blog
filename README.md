@@ -4,5 +4,15 @@ www.royopa.url.ph
 
 This is my blog using [TextPress](http://textpress.shameerc.com).
 
+## Install & Build
 
-[Checkout the website](http://textpress.shameerc.com/2012/02/07/welcome-to-textpress) to learn more about TextPress.
+Make sure you have Composer installed, run `composer install`
+
+## Execute
+
+To see a real-live page in action, start the PHP built-in web server with
+command:
+
+    $ composer run
+
+Then, browse to http://localhost:8888/.
