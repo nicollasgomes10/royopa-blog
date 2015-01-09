@@ -1,5 +1,5 @@
 {
-"title" : "Mudando a 'origin' do seu repositório GIT",
+"title" : "Mudando a origin do seu repositório GIT",
 "author":"Royopa",
 "date":"09-01-2014",
 "tag":"git, vcs",
