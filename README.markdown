@@ -1,5 +1,18 @@
-# TextPress
+# Royopa Blog
 
-Thank you for visiting TextPress. It is a simple, easy to use PHP flat-file blog engine built on top of Slim Framework [Slim Framework](http://slimframework.com) released under the MIT public license.
+www.royopa.url.ph
 
-[Checkout the website](http://textpress.shameerc.com/2012/02/07/welcome-to-textpress) to learn more about TextPress.
+This is my blog using [TextPress](http://textpress.shameerc.com).
+
+## Install & Build
+
+Make sure you have Composer installed, run `composer install`
+
+## Execute
+
+To see a real-live page in action, start the PHP built-in web server with
+command:
+
+    $ composer run
+
+Then, browse to http://localhost:8888/.
