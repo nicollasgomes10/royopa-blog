@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>
-      <?php
+      <?php 
         $title= (isset($global['title'])) ? $global['title'] : $global['site.title'];
         echo $title .' | '. $global['site.name'];
       ?>
     </title>
-    <meta name="author" content="<?php echo $global['author.name']; ?>">
+    <meta name="author" content="<?php echo $global['author.name']; ?>"> 
     <meta name="description" content="<?php echo $global['site.description']; ?>">
     <!-- Le styles -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
@@ -22,32 +22,30 @@
     <div class="header">
       <div class="container-narrow">
         <div class="masthead text-center">
-          <h1 class="muted">Royopa Blog</h1>
+          <h1 class="muted">TextPress</h1>
           <ul class="nav nav-pills">
-            <li class="<?php if($global["route"] == "/") echo "active";?>"><a href="/">Home</a></li>
+            <li class="<?php if($global["route"] == "/") echo "active";?>"><a href="<?php echo $global['base.url'];?>/">Home</a></li>
             <li class="dropdown <?php if($global["route"] == "category") echo "active";?>">
               <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#">Categories <b class="caret"></b></b></a>
               <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop5">
                 <?php
                   foreach ($global['categories'] as $slug => $category) {
-                    echo '<li><a tabindex="-1" href="/category/'.$slug.'">'. $category .'</a></li>';
+                    echo '<li><a tabindex="-1" href="' . $global["base.url"] . '/category/'.$slug.'">'. $category .'</a></li>';
                   }
                 ?>
               </ul>
             </li>
-            <li class="<?php if($global["route"] == "archives") echo "active";?>"><a href="/archives">Archives</a></li>
+            <li class="<?php if($global["route"] == "archives") echo "active";?>"><a href="<?php echo $global['base.url'];?>/archives">Archives</a></li>
             <li><a href="https://github.com/shameerc/TextPress" target="_blank">Source</a>
-            <li class="<?php if($global["route"] == "about") echo "active";?>"><a href="/about">About</a></li>
+            <li class="<?php if($global["route"] == "about") echo "active";?>"><a href="<?php echo $global['base.url'];?>/about">About</a></li>
           </ul>
         </div>
-        <!--
         <div class="jumbotron">
           <h1>The flat-file blog engine for PHP</h1>
           <p class="lead">TextPress is a simple, light-weight, flat-file blog engine in PHP</p>
-          <a class="btn btn-large btn-info" href="/2012/02/07/welcome-to-textpress">Learn More</a> &nbsp;
+          <a class="btn btn-large btn-info" href="<?php echo $global['base.url'];?>/2012/02/07/welcome-to-textpress">Learn More</a> &nbsp;
           <a class="btn btn-large btn-info" href="https://github.com/shameerc/TextPress/tarball/master">Download</a>
         </div>
-        -->
       </div>
     </div>
     <div class="container-narrow">
@@ -62,7 +60,7 @@
         <p>Powered by TextPress. &copy; <a href="http://blog.shameerc.com" target="_blank">Shameer C</a> 2013.</p>
     </footer>
     <!-- Le javascript
-    ==================================================
+    ================================================== 
      Placed at the end of the document so the pages load faster -->
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -82,7 +80,7 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
       $(function(){
-        $('.dropdown-toggle').dropdown()
+        $('.dropdown-toggle').dropdown()  
       })
   </script>
   <?php }?>

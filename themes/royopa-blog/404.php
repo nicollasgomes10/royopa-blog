@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>
-      <?php 
+      <?php
         $title= (isset($global['title'])) ? $global['title'] : $global['site.title'];
         echo $global['site.name'] .' | '. $title;
       ?>
     </title>
     <meta name="description" content="">
-    <meta name="author" content="<?php echo $global['author.name']; ?>">  
+    <meta name="author" content="<?php echo $global['author.name']; ?>">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -34,7 +34,7 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
       $(function(){
-        $('.dropdown-toggle').dropdown()  
+        $('.dropdown-toggle').dropdown()
       })
   </script>
   <?php }?>
@@ -45,7 +45,7 @@
     <div class="header">
       <div class="container-narrow">
         <div class="masthead text-center">
-          <h1 class="muted">TextPress</h1>
+          <h1 class="muted">Royopa Blog</h1>
           <ul class="nav nav-pills">
             <li><a href="/">Home</a></li>
             <li class="dropdown">
@@ -84,7 +84,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    
+
     <script type="text/javascript" src="<?php echo $global['assets.prefix'];?>/themes/textpress/assets/js/bootstrap.min.js"></script>
   </body>
 </html>

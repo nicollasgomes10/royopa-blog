@@ -1,19 +1,19 @@
 {
-    "name": "royopa/royopa-blog",
+    "name": "shameerc/textpress",
     "type": "application",
     "keywords": ["blog","flatfile","markdown"],
     "license": "MIT",
-    "version": "2.0.0",
-    "description": "My blog page",
-    "homepage": "http://royopa.url.ph",
+    "version": "2.0.1",
+    "description": "A flat-file blog engine for PHP",
+    "homepage": "http://textpress.shameerc.com",
     "authors": [{
-            "name": "Rodrigo prado de Jesus",
-            "homepage": "http://royopa.url.ph"
+            "name": "Shameer C",
+            "homepage": "http://blog.shameerc.com"
         }],
     "require": {
         "php": ">=5.3.3",
         "michelf/php-markdown" : "1.4.*",
-        "slim/slim": ">=2.3"
+        "slim/slim": "2.4.*"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*"
@@ -22,12 +22,11 @@
         "psr-0": {
             "Textpress" : "src/shameerc"
         }
-
     },
     "scripts": {
         "run": [
-            "echo 'Started web server on http://localhost:8888'",
-            "php -S localhost:8888"
+            "echo 'Started web server on http://localhost:8000'",
+            "php -S localhost:8000"
         ]
     }
 }
