@@ -35,7 +35,7 @@
               </ul>
             </li>
             <li class="<?php if($global["route"] == "archives") echo "active";?>"><a href="/archives">Archives</a></li>
-            <li><a href="https://github.com/shameerc/TextPress" target="_blank">Source</a>
+            <li><a href="https://github.com/royopa/royopa-blog" target="_blank">Source</a>
             <li class="<?php if($global["route"] == "about") echo "active";?>"><a href="/about">About</a></li>
           </ul>
         </div>
