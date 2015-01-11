@@ -21,16 +21,25 @@ Se você criou um sua cópia do repo com a operação "clone" você terá o bran
 
     $ git remote -v
 
-    origin zeus.aplikacja.info:cust-proj1
+    origin  https://github.com/royopa/api-rosetta-code (fetch)
+    origin  https://github.com/royopa/api-rosetta-code (push)
 
 Se você decidir alterar esta definição mais tarde você pode rodar os seguintes comandos:
 
     $ git remote rm origin
-    $ git remote add origin git@github.com:aplikacjainfo/proj1.git
+    $ git remote add origin https://github.com/twitterdev/api-rosetta-code
     $ git config master.remote origin
     $ git config master.merge refs/heads/master
 
-Depois dessa mudança vou poderá fazer push de seus commits para o novo local do repositório (origin é selecionado como o branch remote padrão para o master e é configurado em .git/config):
+Depois de rodar os comandos acima, verifique se a origin foi alterada, com o comando abaixo:
+    
+    $ git remote -v
+
+    origin  https://github.com/twitterdev/api-rosetta-code (fetch)
+    origin  https://github.com/twitterdev/api-rosetta-code (push)
+
+
+Depois dessa mudança você poderá fazer push de seus commits para o novo local do repositório (o origin é selecionado como o branch remote padrão para o master e é configurado em .git/config):
 
     $ git push
 
