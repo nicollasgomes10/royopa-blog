@@ -21,8 +21,7 @@ Crie uma conta no [Google Analytics][1] e cria uma entrada para o site do seu re
 
 Abra o arquivo dspace.cfg e procure pela propriedade "xmlui.google.analytics.key" e preencha com o código do Google Analytics (UA-XXXXXXX-X) de seu repositório.
 
-Exemplo:
-xmlui.google.analytics.key=UA-XXXXXX-X
+    xmlui.google.analytics.key=UA-XXXXXX-X
 
 ###Reinicie o servidor tomcat
 
