@@ -9,7 +9,7 @@
 
 O [Google Analytics][1] é um serviço oferecido pelo Google no qual, ao ativar-se o serviço por intermédio de uma conta do Google, e ao cadastrar-se um site recebe-se um código para ser inserido na página cadastrada e, a cada exibição, estatísticas de visitação são enviadas ao sistema e apresentadas ao dono do site. 
 
-Temos um módulo no treinamento para tratar dessa característica, os slides estão disponíveis [aqui][2].
+Temos um [módulo no treinamento][2] para tratar dessa característica, os slides estão disponíveis [aqui][2].
 
 O DSpace já vem pré-habilitado para utilização desse serviço, veremos adiante os passos para fazer essa configuração na interface XMLUI.
 
