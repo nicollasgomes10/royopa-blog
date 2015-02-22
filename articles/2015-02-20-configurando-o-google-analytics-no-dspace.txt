@@ -4,7 +4,7 @@
 "date":"20-02-2015",
 "tag":"dspace",
 "slug" : "configurando-o-google-analytics-no-dspace",
-"category":"DSPace"
+"category":"DSpace"
 }
 
 O [Google Analytics][1] é um serviço oferecido pelo Google no qual, ao ativar-se o serviço por intermédio de uma conta do Google, e ao cadastrar-se um site recebe-se um código para ser inserido na página cadastrada e, a cada exibição, estatísticas de visitação são enviadas ao sistema e apresentadas ao dono do site. 
