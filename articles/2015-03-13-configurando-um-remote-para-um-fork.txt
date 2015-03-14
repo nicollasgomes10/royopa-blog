@@ -1,7 +1,7 @@
 {
 "title" : "Configurando um remote para um fork",
 "author":"Royopa",
-"date":"13/03/2015",
+"date":"13-03-2015",
 "tag":"git",
 "slug" : "configurando-um-remote-para-um-fork",
 "category":"GIT"

@@ -1,7 +1,7 @@
 {
 "title" : "Sincronizando um fork no git",
 "author":"Royopa",
-"date":"13/03/2015",
+"date":"13-03-2015",
 "tag":"git",
 "slug" : "sincronizando-um-fork-no-git",
 "category":"GIT"
