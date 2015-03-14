@@ -17,8 +17,8 @@ return array(
     'prefix'            => '',   // prefix to be added with all URLs (not to assets). eg : '/blog'
     'google.analytics'  => 'UA-56277490-1', // Google analytics code. set false to disable
     'cache' => array(
-        'enabled'   => false, // Enable/Disable cache
-        'expiry'    => 24, // Cache expiry, in hours. -1 for no expiry
+        'enabled'   => true, // Enable/Disable cache
+        'expiry'    => 12, // Cache expiry, in hours. -1 for no expiry
         'path'      => './cache'
     ),
     // Define routes

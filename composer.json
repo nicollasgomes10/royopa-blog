@@ -12,8 +12,8 @@
         }],
     "require": {
         "php": ">=5.3.3",
-        "michelf/php-markdown" : "1.4.*",
-        "slim/slim": "2.4.*",
+        "michelf/php-markdown" : "~1.5",
+        "slim/slim": "~2.6",
         "banago/bridge": "dev-master",
         "jakeasmith/http_build_url": "dev-master",
         "royopa/phploy": "3.0.16-stable"
