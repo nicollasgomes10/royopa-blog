@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a96b6ce211f0ba037c7a3b00a2d1f4dc",
+    "hash": "e755ceaddea05e72dbe81ff36ccd99d5",
     "packages": [
         {
             "name": "banago/bridge",
