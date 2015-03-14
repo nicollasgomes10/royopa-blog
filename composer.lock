@@ -4,8 +4,83 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "149c773292a4cc3e211c027072edcbfe",
+    "hash": "a2649f78460e053b44e9f28e0d27a32e",
     "packages": [
+        {
+            "name": "banago/bridge",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/banago/Bridge.git",
+                "reference": "81077125ddb426bfeb77ece29215bec0085df3f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/banago/Bridge/zipball/81077125ddb426bfeb77ece29215bec0085df3f9",
+                "reference": "81077125ddb426bfeb77ece29215bec0085df3f9",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Banago\\Bridge\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL v3"
+            ],
+            "authors": [
+                {
+                    "name": "Baki Goxhaj",
+                    "email": "banago@gmail.com"
+                }
+            ],
+            "description": "A PHP class to transfer data using different protocols (sftp, ftp, http, etc). Utilizes PHPs ssh2, ftp and curl functions if available.",
+            "keywords": [
+                "banago",
+                "ftp",
+                "sftp",
+                "ssh"
+            ],
+            "time": "2015-02-23 19:23:49"
+        },
+        {
+            "name": "jakeasmith/http_build_url",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jakeasmith/http_build_url.git",
+                "reference": "cbf4660a79068ae4606f2ef67b38dc91dbe96877"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jakeasmith/http_build_url/zipball/cbf4660a79068ae4606f2ef67b38dc91dbe96877",
+                "reference": "cbf4660a79068ae4606f2ef67b38dc91dbe96877",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/http_build_url.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jake A. Smith",
+                    "email": "theman@jakeasmith.com"
+                }
+            ],
+            "description": "Provides functionality for http_build_url() to environments without pecl_http.",
+            "time": "2015-01-21 14:56:58"
+        },
         {
             "name": "michelf/php-markdown",
             "version": "1.4.1",
@@ -56,6 +131,43 @@
                 "markdown"
             ],
             "time": "2014-05-05 02:43:50"
+        },
+        {
+            "name": "royopa/phploy",
+            "version": "v3.0.16-stable",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/royopa/phploy.git",
+                "reference": "91885701aea4f74cf50cf2d10f49639f827c9740"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/royopa/phploy/zipball/91885701aea4f74cf50cf2d10f49639f827c9740",
+                "reference": "91885701aea4f74cf50cf2d10f49639f827c9740",
+                "shasum": ""
+            },
+            "require": {
+                "banago/bridge": "dev-master",
+                "jakeasmith/http_build_url": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Banago\\PHPloy\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Baki Goxhaj",
+                    "email": "banago@gmail.com"
+                }
+            ],
+            "description": "PHPloy - Incremental Git (S)FTP deployment tool that supports submodules, multiple servers and rollbacks.",
+            "time": "2015-02-28 10:39:09"
         },
         {
             "name": "slim/slim",
@@ -521,7 +633,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "banago/bridge": 20,
+        "jakeasmith/http_build_url": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
