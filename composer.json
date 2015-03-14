@@ -30,6 +30,9 @@
         "run": [
             "echo 'Started web server on http://localhost:8000'",
             "php -S localhost:8000"
+        ],
+        "deploy": [
+            "php ./vendor/royopa/phploy/bin/phploy.phar --server production"
         ]
     }
 }

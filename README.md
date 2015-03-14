@@ -16,3 +16,11 @@ command:
     $ composer run
 
 Then, browse to http://localhost:8888/.
+
+## Deploy
+
+    $ php ./vendor/royopa/phploy/bin/phploy.phar --server production
+
+    or
+
+    $ composer deploy
