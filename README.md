@@ -15,7 +15,7 @@ command:
 
     $ composer run
 
-Then, browse to http://localhost:8888/.
+Then, browse to http://localhost:8000/
 
 ## Deploy
 

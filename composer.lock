@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e755ceaddea05e72dbe81ff36ccd99d5",
+    "hash": "a370401a24a194705c15e3ff5c149355",
     "packages": [
         {
             "name": "banago/bridge",
@@ -629,12 +629,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "47cce9883c58970fc2739d90990422e5d0c949bb"
+                "reference": "539c4b2e658bab614f2dc70010e4fc6f715a0975"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/47cce9883c58970fc2739d90990422e5d0c949bb",
-                "reference": "47cce9883c58970fc2739d90990422e5d0c949bb",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/539c4b2e658bab614f2dc70010e4fc6f715a0975",
+                "reference": "539c4b2e658bab614f2dc70010e4fc6f715a0975",
                 "shasum": ""
             },
             "require": {
@@ -696,7 +696,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-03-02 06:10:41"
+            "time": "2015-03-15 17:54:12"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
