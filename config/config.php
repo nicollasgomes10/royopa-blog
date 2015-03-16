@@ -10,7 +10,7 @@ return array(
     'themes.path'       => './themes',  // Path to templates
     'active.theme'      => 'royopa-blog',  // Current active template
     'layout.file'       => 'layout',    // Site layout file
-    'file.extension'    => '.txt',   // file extension of articles
+    'file.extension'    => '.md',   // file extension of articles
     'disqus.username'   => 'royopa',   // Your disqus username or false (Global)
     'markdown'          => true, //Enable of disable markdown parsing. 
     'assets.prefix'     => '', // prefix to be added with assets files
