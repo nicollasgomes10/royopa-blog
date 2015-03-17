@@ -1,9 +1,9 @@
 {
-"title" : "Como gerar um novo "bootstrap.php.cache" no Symfony,
+"title":"Como gerar um novo 'bootstrap.php.cache' no Symfony",
 "author":"Royopa",
 "date":"17-03-2015",
-"tag":"php, symfony",
-"slug" : "como-gerar-um-novo-bootstrap.php.cache-no-symfony",
+"tag":"php",
+"slug":"como-gerar-um-novo-bootstrap-php-cache-no-symfony",
 "category":"PHP"
 }
 
@@ -22,6 +22,6 @@ Para gerar um novo arquivo bootstrap.php.cache no Symfony2 (versão +2.1), basta
     $ cd [your_app_dir]
     $ php ./vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/bin/build_bootstrap.php
 
-Mais informações sobre o arquivo de cache pode ser encontrada na [Documentação Oficial do Symfony][1]
+Mais informações sobre o arquivo de cache podem ser encontradas na [Documentação Oficial do Symfony][1]
 
 [1]: (http://symfony.com/doc/current/book/performance.html#use-bootstrap-files)
