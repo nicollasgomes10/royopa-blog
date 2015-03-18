@@ -1,5 +1,7 @@
 # Royopa Blog
 
+[![Build Status](https://travis-ci.org/royopa/royopa-blog.svg?branch=master)](https://travis-ci.org/royopa/royopa-blog)
+
 www.royopa.url.ph
 
 This is my blog using [TextPress](http://textpress.shameerc.com).
