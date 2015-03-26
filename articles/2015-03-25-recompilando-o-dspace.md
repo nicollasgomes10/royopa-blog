@@ -9,60 +9,61 @@
 
 https://wiki.duraspace.org/display/DSPACE/Rebuild+DSpace
 
-Rebuild DSpace
-Icon
-The following directions are for DSpace versions from 1.5.x up to 1.8.x. For DSpace 3 and above, see the official docs for the appropriate version (3.x, 4.x).
-Directories:
-[dspace] - The DSpace Installation directory
-[dspace-source]/dspace/ - The DSpace Assembly project within the DSpace source code
-[dspace-source]/dspace/target/dspace-[version]-build.dir/ - The directory where the DSpace Assembly project builds a new installation package for DSpace.
-[Tomcat]/webapps/ (Mac OSX Server: /library/jboss/3.2/deploy)
-Note: JBOSS comes pre-installed with Mac OS X server. However, for both server and desktop editions Tomcat may be used as with other platforms.
-Quick Restart (Just restarts the web server after configuration changes*)
-(*Exception – Changes to Messages.properties always requires a rebuild!)
-Stop Tomcat (WARNING: this will bring down the website)
-(Linux / OS X / Solaris) [Tomcat]/bin/shutdown.sh
-(Mac OS X Server) Use Server Admin to stop Tomcat ("Application Server")
-(Windows) Use Tomcat Service Monitor (in Notification Area) to stop Tomcat
-Start Tomcat
-(Linux / OS X / Solaris) [Tomcat]/bin/startup.sh
-(Mac OS X Server) Use Server Admin to start Tomcat ("Application Server")
-(Windows) Use Tomcat Service Monitor (in Notification Area) to start Tomcat
-Quick Build: (Quick build after smaller, usually JSP based or XMLUI-Theme based, changes)
-Log on to the server DSpace is running on (e.g. ssh). Make sure to login as the user who initially installed DSpace!
-Open a command prompt (if you don't have one already), and cd [dspace-source]/dspace/
-mvn package (recompiles all DSpace code and rebuilds the DSpace installation package)
-cd [dspace-source]/dspace/target/dspace-[version]-build.dir/ (move into the target directory where DSpace has been rebuilt)
-ant update (updates your DSpace install based on the newly built content in your targetdirectory)
-Alternatively, if you do not need to reinstall JAR files, you could instead run ant update_webapps (which just copies over web application changes to your [dspace])
-If you do not have Tomcat pointing at your [dspace]/webapps/ directory, you will also need to copy your final web application(s) into your [Tomcat]/webapps/directory.
-cp -R [dspace]/webapps/ [Tomcat]/webapps/
-(For Mac OS X Server) cp build/*.war /library/jboss/3.2/deploy
-Test your changes in DSpace
-Full Refresh/Rebuild: (Completely refresh all of DSpace)
-Log on to the server DSpace is running on (e.g. ssh). Make sure to log in as the user who initially installed DSpace!
-Open a command prompt (if you don't have one already), and cd [dspace-source]/dspace/
-mvn clean package (removes all old compiled code and recompiles all DSpace code and rebuilds the DSpace installation package)
-cd [dspace-source]/dspace/target/dspace-[version]-build.dir/ (move into the target directory where DSpace has been rebuilt)
-ant update (updates your DSpace install based on the newly built content in your targetdirectory)
-Alternatively, if you do not need to reinstall JAR files, you could instead run ant update_webapps (which just copies over web application changes to your [dspace])
-If you do not have Tomcat pointing at your [dspace]/webapps/ directory, you will also need to copy your final web application(s) into your [Tomcat]/webapps/directory.
-cp -R [dspace]/webapps/ [Tomcat]/webapps/
-(For Mac OS X Server) cp build/*.war /library/jboss/3.2/deploy
-To force Tomcat to recompile everything, you may also wish to remove any DSpace related web application directories created in [Tomcat]/work/Catalina/localhost
-Start Tomcat
-(Linux / OS X / Solaris) [Tomcat]/bin/startup.sh
-(Mac OS X Server) Use Server Admin to start Tomcat ("Application Server")
-(Windows) Use Tomcat Service Monitor (in Notification Area) to start Tomcat
-Test your changes in DSpace
-Exclude individual modules
-It doesn't happen often that someone needs all of the DSpace modules. Most prominent example are the web interfaces - most people need either JSPUI or XMLUI, but not both. You may cut down on build time by excluding unneeded modules. But beware, some modules have hidden interdependencies, so it's not always possible to exclude all modules. If a build fails, it may be for this reason. In that case try the full build again.
-To build dspace without the JSPUI and LNI modules ("profiles" in Maven terminology), add this option to the Maven command:
-mvn package -P !dspace-jspui,!dspace-lni
-The full list of DSpace modules that you may choose to exclude from the build include:
-dspace-jspui (JSPUI)
-dspace-lni (LNI)
-dspace-oai (OAI-PMH)
-dspace-sword (SWORD v.1)
-dspace-swordv2 (SWORD v.2)
-dspace-xmlui (XMLUI)
+Diretórios utilizados nesse artigo:
+
+[dspace] - O diretório de instalação do DSpace
+[dspace-source]/dspace/ - O projeto compilado dentro do código fonte do DSpace
+[dspace-source]/dspace/target/dspace-[version]-build.dir/ - O diretório onde o DSpace compilado constrói um um novo pacote de instalação para o DSpace.
+[dspace-src]/dspace/target/dspace-installer/ - O mesmo descrito no item acima, porém para DSpace a partir da versão 5.
+[Tomcat]/webapps/ - O diretório com as aplicações web do Tomcat
+
+###Reinicialização rápida (apenas reinicia o servidor web depois de mudanças na configuração)
+(*Exceção – Mudanças no arquivo Messages.properties sempre precisam de um rebuild!)
+
+Parar o Tomcat
+(Linux / OS X / Solaris) 
+    $ [Tomcat]/bin/shutdown.sh
+
+Iniciar o Tomcat
+(Linux / OS X / Solaris) 
+    $ [Tomcat]/bin/startup.sh
+
+##Build rápido: (Build menor, geralmente quando são feitas mudanças em temas JSP ou XMLUI)
+
+Entre no servidor onde o DSpace está rodando (exemplo, via SSH). Certifique-se de fazer o login com o usuário utilizado na instalação do DSpace!
+
+Abra o prompt de comando e execute os comandos:
+
+    $ [dspace-source]/dspace/ (entra na pasta onde está o código fonte do DSpace)
+    $ mvn package (recompila o código DSpace e reconstrói o pacote de instalação)
+    $ cd [dspace-src]/dspace/target/dspace-installer/ (entra no diretório onde o DSpace foi reconstruído)
+    $ ant update (atualiza a instalação DSpace baseada no novo conteúdo no diretório target)
+
+Alternativamente, se você não precisa instalar os arquivos JAR, você pode rodar o comando **ant update_webapps** (que somente copia as mudanças para o diretório [dspace]).
+Se você não tem um Tomcat apontando para o diretório [dspace]/webapps/, você vai precisar copiar o aplicativo web final no diretório webapps, conforme abaixo:
+    $ cp -R [dspace]/webapps/ [Tomcat]/webapps/
+
+Teste suas mudanças no DSpace pelo navegador
+
+##Atualização/Rebuild completo: (Atualiza o DSpace por completo)
+
+Entre no servidor onde o DSpace está rodando (exemplo, via SSH). Certifique-se de fazer o login com o usuário utilizado na instalação do DSpace!
+
+Abra o prompt de comando e execute os comandos:
+
+    $ cd [dspace-source]/
+    $ mvn clean package (recompila todo o código DSpace e reconstrói o pacote de instalação)
+    $ cd [dspace-src]/dspace/target/dspace-installer/ (entra no diretório onde o DSpace foi reconstruído)
+    $ ant update (atualiza a instalação DSpace baseada no novo conteúdo no diretório target)
+
+Alternativamente, se você não precisa instalar os arquivos JAR, você pode rodar o comando **ant update_webapps** (que somente copia as mudanças para o diretório [dspace]).
+Se você não tem um Tomcat apontando para o diretório [dspace]/webapps/, você vai precisar copiar o aplicativo web final no diretório webapps, conforme abaixo:
+    $ cp -R [dspace]/webapps/ [Tomcat]/webapps/
+
+Para forçar o Tomcat a recompilar tudo, você pode remover qualquer diretório de aplicações web DSpace criados em [Tomcat]/work/Catalina/localhost.
+
+Iniciar o Tomcat
+(Linux / OS X / Solaris) 
+    $ [Tomcat]/bin/startup.sh
+
+Teste suas mudanças no DSpace pelo navegador

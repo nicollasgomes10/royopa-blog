@@ -7,23 +7,31 @@
 "category":"DSpace"
 }
 
-https://github.com/royopa/dspace-tematres
+http://libraryblogs.is.ed.ac.uk/redic/2013/02/12/authority-control/
 
-Copiar a classe TematresProtocol.java no diretório [dspace-src]dspace-api/src/main/java/org/dspace/content/authority/.
+#Mudanças no DSpace
 
-Recompilar o DSpace
+Baixe as classes Java do DSpace, no repositório do [GitHub](https://github.com/royopa/dspace-tematres)
 
+Copie as classes TematresProtocol.java e TematresSponsorship.java para o diretório [dspace-src]dspace-api/src/main/java/org/dspace/content/authority/.
 
+Recompile o DSpace com o comandos abaixo:
 
-## Incluir a configuração no dspace.cfg para usar o controle de autoridades
-org.dspace.content.authority.TematresSponsorship = TematresSponsorship
+    $ cd [dspace-src]
+    $ mvn package
+    $ cd [dspace-src]/dspace/target/dspace-installer/
+    $ ant update
 
-## URL para acesso ao web service do Tematres
-tematres.url = http://bdpife2.sibi.usp.br/a/tematres/vocab/services.php
+## Inclua as informações abaixo no arquivo dspace.cfg para usar o controle de autoridades do Tematres:
 
-## Configurado plugin para Sponsorship para acesso aos dados do Tematres
-choices.plugin.dc.description.sponsorship = TematresSponsorship
-choices.presentation.dc.description.sponsorship = lookup
-authority.controlled.dc.description.sponsorship = true
+```cfg
+    org.dspace.content.authority.TematresSponsorship = TematresSponsorship
 
+    ## URL para acesso ao web service do Tematres
+    tematres.url = http://bdpife2.sibi.usp.br/a/tematres/vocab/services.php
 
+    ## Configurado plugin para Sponsorship para acesso aos dados do Tematres
+    choices.plugin.dc.description.sponsorship = TematresSponsorship
+    choices.presentation.dc.description.sponsorship = lookup
+    authority.controlled.dc.description.sponsorship = true
+```
