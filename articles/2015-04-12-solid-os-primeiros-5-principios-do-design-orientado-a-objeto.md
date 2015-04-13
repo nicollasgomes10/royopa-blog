@@ -7,10 +7,10 @@
 "category":"Solid"
 }
 
-Tradução do artigo [S.O.L.I.D: The First 5 Principles of Object Oriented Design, de Samuel Oloruntoba][https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design]
+Tradução do artigo [S.O.L.I.D: The First 5 Principles of Object Oriented Design, de Samuel Oloruntoba](https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)
 
 
-S.O.L.I.D é um acrônimo para os primeiros cinco princípios de design orientado a objetos (OOD) criado por Robert C. Martin, popularmente conhecido como [Uncle Bob][http://en.wikipedia.org/wiki/Robert_Cecil_Martin].
+S.O.L.I.D é um acrônimo para os primeiros cinco princípios de design orientado a objetos (OOD) criado por Robert C. Martin, popularmente conhecido como [Uncle Bob](http://en.wikipedia.org/wiki/Robert_Cecil_Martin).
 Estes princípios quando combinados, facilita para um programador desenvolver um software que seja fácil de se manter e estender. Eles também facilitam que desenvolvedores evitem códigos malcheirosos, facilita na refatoração do código e são também uma parte do desenvolvimento ágil ou desenvolvimento adaptativo de software.
 
 Nota: Esse é um simples artigo que somente diz o que é S.O.L.I.D.
