@@ -197,37 +197,41 @@ public function sum() {
 }
 ```
 
-Liskov substitution principle
------------------------------
+Liskov substitution principle ou Princípio da substituição de Liskov
+--------------------------------------------------------------------
 
-Let q(x) be a property provable about objects of x of type T. Then q(y) should be provable for objects y of type S where S is a subtype of T.
-All this is stating is that every subclass/derived class should be substitutable for their base/parent class.
-
-Still making use of out AreaCalculator class, say we have a VolumeCalculator class that extends the AreaCalculator class:
-
+Considere que q(x) seja uma propriedade demonstrável dos objetos de x de tipo T. Então q(y) deve ser verdadeiro para objetos y do tipo S onde S é um subtipo de T.
+Tudo isso está afirmando que cada suclasse/classe derivada devem ser substituíveis por sua classe base;
+Ainda fazendo o uso da classe AreaCalculator, digamos que temos uma classe VolumeCalculator que estende a classe AreaCalculator:
 ```php
-class VolumeCalculator extends AreaCalulator {
-    public function __construct($shapes = array()) {
+class VolumeCalculator extends AreaCalulator
+{
+    public function __construct($shapes = array())
+    {
         parent::__construct($shapes);
     }
 
-    public function sum() {
+    public function sum()
+    {
         // logic to calculate the volumes and then return and array of output
         return array($summedData);
     }
 }
 ```
-In the SumCalculatorOutputter class:
+Na classe SumCalculatorOutputter:
 
 ```php
-class SumCalculatorOutputter {
+class SumCalculatorOutputter
+{
     protected $calculator;
 
-    public function __constructor(AreaCalculator $calculator) {
+    public function __constructor(AreaCalculator $calculator)
+    {
         $this->calculator = $calculator;
     }
 
-    public function JSON() {
+    public function JSON()
+    {
         $data = array(
             'sum' => $this->calculator->sum();
         );
@@ -235,7 +239,8 @@ class SumCalculatorOutputter {
         return json_encode($data);
     }
 
-    public function HTML() {
+    public function HTML()
+    {
         return implode('', array(
             '<h1>',
                 'Sum of the areas of provided shapes: ',
@@ -245,7 +250,7 @@ class SumCalculatorOutputter {
     }
 }
 ```
-If we tried to run an example like this:
+Se tentássemos rodar um exemplo como este:
 
 ```php
 $areas = new AreaCalculator($shapes);
@@ -253,128 +258,157 @@ $volumes = new AreaCalculator($solidShapes);
 
 $output = new SumCalculatorOutputter($areas);
 $output2 = new SumCalculatorOutputter($volumes);
-The program does not squawk, but when we call the HTML method on the $output2 object we get an E_NOTICE error informing us of an array to string conversion.
 ```
+O programa não dará erro, mas quando chamarmos o método HTML no objeto $output2 nós teremos um erro E_NOTICE informando da conversão de um array em string.
 
-To fix this, instead of returning an array from the VolumeCalculator class sum method, you should simply:
+Para corrigir isso, ao invés de retornar um array do método sum da classe VolumeCalculator, você deve simplesmente:
 
 ```php
-public function sum() {
-    // logic to calculate the volumes and then return and array of output
+public function sum()
+{
+    // lógica para calcular os volumes e retornar um array
     return $summedData;
 }
 ```
-The summed data as a float, double or integer.
+Os dados são somados como um float, double ou integer.
 
-Interface segregation principle
--------------------------------
+Interface segregation principle ou Princípio da Segregação de Interface
+-----------------------------------------------------------------------
 
-A client should never be forced to implement an interface that it doesn’t use or clients shouldn’t be forced to depend on methods they do not use.
-Still using our shapes example, we know that we also have solid shapes, so since we would also want to calculate the volume of the shape, we can add another contract to the ShapeInterface:
+Um cliente nunca deve ser forçado a implementar uma interface que ele não usa ou clientes não devem ser forçados a depender de métodos que eles não utilizam.
+Ainda usando nosso exemplo de formas, nós sabemos que temos formas sólidas, uma vez que também gostaríamos de calcular o volume de uma forma, nós podemos adicionar um outro contrato na interface ShapeInterface:
 
 ```php
-interface ShapeInterface {
+interface ShapeInterface
+{
     public function area();
     public function volume();
 }
 ```
-Any shape we create must implement the volume method, but we know that squares are flat shapes and that they do not have volumes, so this interface would force the Square class to implement a method that it has no use of.
+Qualquer forma que criamos implementa o método voluma, mas nós sabemos que quadrados são formas planas e que eles não tem volumes, então esta interface forçaria a classe Square a implementar um método que ele não utiliza.
 
-ISP says no to this, instead you could create another interface called SolidShapeInterface that has the volume contract and solid shapes like cubes e.t.c can implement this interface:
+Esse princípio diz não para isso, em vez disso você poderia criar outra interface chamada SolidShapeInterface que tem o contrato de volume e formas sólidas como cubos que podem implementar essa interface:
 
 ```php
-interface ShapeInterface {
+interface ShapeInterface
+{
     public function area();
 }
 
-interface SolidShapeInterface {
+interface SolidShapeInterface
+{
     public function volume();
 }
 
-class Cuboid implements ShapeInterface, SolidShapeInterface {
-    public function area() {
-        // calculate the surface area of the cuboid
+class Cuboid implements ShapeInterface, SolidShapeInterface
+{
+    public function area()
+    {
+        // calcula a área de um cubo
     }
 
-    public function volume() {
-        // calculate the volume of the cuboid
+    public function volume()
+    {
+        // calcula o volume de um cubo
     }
 }
 ```
 
-This is a much better approach, but a pitfall to watch out for is when type-hinting these interfaces, instead of using a ShapeInterface or a SolidShapeInterface.
+Essa é uma abordagem muito melhor, mas uma armadilha para quem vê de fora, quando fizer o type-hint dessas interfaces, em vez de usar uma ShapeInterface ou uma SolidShapeInterface.
 
-You can create another interface, maybe ManageShapeInterface, and implement it on both the flat and solid shapes, this way you can easily see that it has a single API for managing the shapes. For example:
+Você pode ciar uma outra interface, talvez ManageShapeInterface e implementá-la em ambas as formas planas e sólidas, desta forma você pode facilmente ver que ele tem uma única API para gerenciar as formas. Por exemplo:
+
 ```php
-interface ManageShapeInterface {
+interface ManageShapeInterface
+{
     public function calculate();
 }
 
 class Square implements ShapeInterface, ManageShapeInterface {
-    public function area() { /*Do stuff here*/ }
+    public function area()
+    {
+        /*Do stuff here*/
+    }
 
-    public function calculate() {
+    public function calculate()
+    {
         return $this->area();
     }
 }
 
-class Cuboid implements ShapeInterface, SolidShapeInterface, ManageShapeInterface {
-    public function area() { /*Do stuff here*/ }
-    public function volume() { /*Do stuff here*/ }
+class Cuboid implements ShapeInterface, SolidShapeInterface, ManageShapeInterface
+{
+    public function area()
+    {
+        /*Do stuff here*/
+    }
 
-    public function calculate() {
+    public function volume()
+    {
+        /*Do stuff here*/
+    }
+
+    public function calculate()
+    {
         return $this->area() + $this->volume();
     }
 }
 ```
 Now in AreaCalculator class, we can easily replace the call to the area method with calculate and also check if the object is an instance of the ManageShapeInterface and not the ShapeInterface.
 
-Dependency Inversion principle
-------------------------------
+Dependency Inversion principle ou Princípio da Inversão de Dependência
+----------------------------------------------------------------------
 
-The last, but definitely not the least states that:
+O último, mas definitivamente não o menos importante afirma que:
 
-Entities must depend on abstractions not on concretions. It states that the high level module must not depend on the low level module, but they should depend on abstractions.
-This might sound bloated, but it is really easy to understand. This principle allows for decoupling, an example that seems like the best way to explain this principle:
+Entidades devem depender de abstrações e não de classes concretas. Ele afirma que o módulo de alto nível não deve depender do módulo de baixo nível, mas eles devem depender de abstrações.
+Isso pode parecer "inchado", mas é muito fácil de entender. Este princípio permite o desacoplamento, um exemplo parece ser a melhor maneira de explicar esse princípio:
 
 ```php
-class PasswordReminder {
+class PasswordReminder
+{
     private $dbConnection;
 
-    public function __construct(MySQLConnection $dbConnection) {
+    public function __construct(MySQLConnection $dbConnection)
+    {
         $this->dbConnection = $dbConnection;
     }
 }
 ```
-First the MySQLConnection is the low level module while the PasswordReminder is high level, but according to the definition of D in S.O.L.I.D. which states that Depend on Abstraction not on concretions, this snippet above violates this principle as the PasswordReminder class is being forced to depend on the MySQLConnection class.
+Primeiro o MySQLConnection é o módulo de baixo nível, enquanto o PasswordRemnder é o de alto nível, mas de acordo com a definição D no S.O.L.I.D. este trecho acima viola este princípio pois a classe PasswordReminder está sendo forçada a depender da classe MySQLConnection.
 
-Later if you were to change the database engine, you would also have to edit the PasswordReminder class and thus violates Open-close principle.
+Mais tarde, se você tivesse que mudar o banco de dados, você também teria que editar a classe PasswordReminder e, portanto viola o princípio Open-close.
 
-The PasswordReminder class should not care what database your application uses, to fix this again we “code to an interface”, since high level and low level modules should depend on abstraction, we can create an interface:
-
-interface DBConnectionInterface {
+A classe PasswordReminder não deve se preocupar com o banco de dados usado pela aplicação, para corrigir isso mais uma vez nós "programamos para uma interface", já que os módulos de alto e baixo nível devem depender de uma abstraão, podemos criar uma interface:
+```php
+interface DBConnectionInterface
+{
     public function connect();
 }
-The interface has a connect method and the MySQLConnection class implements this interface, also instead of directly type-hinting MySQLConnection class in the constructor of the PasswordReminder, we instead type-hint the interface and no matter the type of database your application uses, the PasswordReminder class can easily connect to the database without any problems and OCP is not violated.
-
 ```php
-class MySQLConnection implements DBConnectionInterface {
-    public function connect() {
+A interface tem um método connect e a classe MySQLConnection implementa essa interface, também ao invés de fazer um type-hinting da classe MySQLConnection no construtor do PassWordReminder nós fizemos um type-hint da interface e não importa o tipo do banco de dados que o seu aplicativo usa, a classe PasswordReminder pode facilmente conectar ao banco de dados sem quaisquer problemas e o princícpio Open-Closed não é violado.
+```php
+class MySQLConnection implements DBConnectionInterface
+{
+    public function connect()
+    {
         return "Database connection";
     }
 }
 
-class PasswordReminder {
+class PasswordReminder
+{
     private $dbConnection;
 
-    public function __construct(DBConnectionInterface $dbConnection) {
+    public function __construct(DBConnectionInterface $dbConnection)
+    {
         $this->dbConnection = $dbConnection;
     }
 }
 ```
-According to the little snippet above, you can now see that both the high level and low level modules depend on abstraction.
+De acordo com o o pequeno trecho acima, agora você pode ver que tanto módulos de alto e baixo níveis dependem de abstração.
 
-Conclusion
-----------
+Conclusão
+---------
 
-Honestly, S.O.L.I.D might seem to be a handful at first, but with continuous usage and adherence to its guidelines, it becomes a part of you and your code which can easily be extended, modified, tested, and refactored without any problems.
+Honestamente, S.O.L.I.D. pode parecer "irritante" no início, mas com o uso contínuo e adesão de suas diretrizes, torna-se parte de você e de seu código, que poderá ser facilmente estendido, modificado, testado e refatorado sem quaisquer problemas.
