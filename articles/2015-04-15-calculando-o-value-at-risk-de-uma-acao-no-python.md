@@ -37,7 +37,7 @@ Tendo em conta que a distribuição dos preços muda com o tempo, não se pode r
 
 O código a seguir usa python3 o [pandas](http://pandas.pydata.org/), uma biblioteca bastante útil para manipular dados financeiros e também o [matplotlib](http://matplotlib.org/) para geração dos gráficos.
 
- ```python
+```python
 # Choose a time period 
 d1 = datetime.datetime(2001, 1, 1)
 d2 = datetime.datetime(2012, 1, 1)
