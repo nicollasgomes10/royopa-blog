@@ -7,12 +7,9 @@
 "category":"finance"
 }
 
-Value at Risk
--------------
+Uma madrugada que utilizei para juntar o conhecimento que estou adquirindo fazendo um curso ppreparatório para a [Certificação de Especialista em Investimentos Anbima (CEA)](http://certificacao.anbid.com.br/cea.asp) e também aprendendo a [linguagem de programação Python](https://www.python.org/) resolvi fazer alguns testes e pesquisas para calcular o [Value at Risk (VaR)](http://pt.wikipedia.org/wiki/Value_at_Risk) de uma ação pegando os dados do site [Quandl](https://www.quandl.com/).
 
-Uma madrugada que utilizei para juntar o conhecimento que estou tendo fazendo um curso para a [Certificação de Especialista em Investimentos Anbima (CEA)](http://certificacao.anbid.com.br/cea.asp) e também aprendendo a [linguagem de programação Python](https://www.python.org/) resolvi fazer alguns testes e pesquisas para calcular o [Value at Risk (VaR)](http://pt.wikipedia.org/wiki/Value_at_Risk) de uma ação pegando os dados do site [Quandl](https://www.quandl.com/).
-
-Existe um ótimo [artigo sobre o Quandl do Wilson Freitas](http://wilsonfreitas.github.io/posts/2014-03/quandl-uma-otima-forma-de-obter-dados-estruturados-em-python.html), um cara que é fera em Python e na área de finanças e ciência de dados na análise de dados. Tinha visto o blog dele na semana passada e gostado bastante das análises. Por coincidência assisti uma [palestra dele](http://www.slideshare.net/wfreitas/analise-dos-campeoes-da-corrida-de-sao-silvestre-com-python) no encontro GrupySP do dia 11/04/2015.
+Existe um ótimo [artigo sobre o Quandl do Wilson Freitas](http://wilsonfreitas.github.io/posts/2014-03/quandl-uma-otima-forma-de-obter-dados-estruturados-em-python.html), um cara que é fera em Python e ciência de dados. Tinha visto o blog dele na semana passada e gostado bastante das análises. Por coincidência assisti uma [palestra dele](http://www.slideshare.net/wfreitas/analise-dos-campeoes-da-corrida-de-sao-silvestre-com-python) no encontro GrupySP do dia 11/04/2015.
 
 Fazendo algumas pesquisas encontrei um [artigo legal](http://gosmej1977.blogspot.com.br/2013/06/value-at-risk.html) sobre como calcular o VaR usando Python, então resolvi traduzi-lo e adaptá-lo conforme as minhas necessidades, segue abaixo o texto:
 
