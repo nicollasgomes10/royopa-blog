@@ -24,12 +24,15 @@ Beta = Covariância entre o Retorno do Ativo e do Mercado / Variância do Retorn
 
 Ou desta maneira:
 
+
 ![Fórmula do Índice Beta](http://hcinvestimentos.com/wp-content/uploads/2011/12/formula-beta.png "Fórmula do Índice Beta")
 
 onde:
 
 βa = Beta
+
 ra = Retorno do Ativo
+
 rp = Retorno do Portfólio (Também pode ser usado como rm = Retorno do Mercado)
 
 O coeficiente β é usado para medir o risco não-diversificável, isto é, fatores de mercado que afetam todas as empresas, como guerra, inflação, crises internacionais, etc. Ou seja, quanto o ativo está sujeito às variações não controláveis do mercado e do ambiente. É um índice que mede a relação entre o retorno de um ativo e o retorno do mercado. Desta forma, o prêmio por risco será sempre multiplicado por este coeficiente, exigindo um prêmio maior por risco quanto maior a variação do ativo em relação à carteira de mercado.
@@ -54,7 +57,7 @@ Considere-se, para este exemplo, que o mercado encontra-se em alta, com boas per
 
 Analisando a explicação sobre o índice beta fornecida acima, concluímos que devemos escolher ativos com betas superiores a 1, pois pertencem a ativos que possuem oscilações maiores do que a carteira. Tanto positivamente quanto negativamente.
 
-O próximo passo, muito importante, é observar o período de análise do β. Este deve estar alinhado com a estratégia de investimento, isto é, para um investimento de médio prazo, devemos escolher o β de um período similar.
+O próximo passo é observar o período de análise do β. Este deve estar alinhado com a estratégia de investimento, isto é, para um investimento de médio prazo, devemos escolher o β de um período similar.
 
 Fontes:
 [O que é Índice Beta?](http://hcinvestimentos.com/2011/12/20/indice-beta/)
@@ -63,7 +66,7 @@ Fontes:
 Vamos a programação
 -------------------
 
-O código a seguir usa python3 e o [Numpy](http://numpy.scipy.org/), pacote para a linguagem Python que suporta arrays e matrizes multidimensionais, possuindo uma larga coleção de funções matemáticas para trabalhar com estas estruturas.
+O código a seguir usa Python3 e o [Numpy](http://numpy.scipy.org/), pacote para a linguagem Python que suporta arrays e matrizes multidimensionais, possuindo uma larga coleção de funções matemáticas para trabalhar com estas estruturas.
 
 ```python
 #!/usr/bin/python
@@ -165,4 +168,4 @@ print('O beta é = ', beta)
 
 ```
 
-O código em Pyhton acima pode ser baixado no Gist, no endereço: (https://gist.github.com/royopa/a8af15e8cead604ff6c2)
+O código em Pyhton acima pode ser baixado no Gist, no endereço: [https://gist.github.com/royopa/a8af15e8cead604ff6c2](https://gist.github.com/royopa/a8af15e8cead604ff6c2)

@@ -1,6 +1,6 @@
 <?php
 return array(
-    'site.baseurl'      => 'http://royopa.url.ph',   // Site URL (Global)
+    'site.baseurl'      => 'http://www.royopa.url.ph',   // Site URL (Global)
     'site.name'         => 'Royopa Blog',   // Site name (Global)
     'site.title'        => 'PHP Flat-file blog engine',  // Site default title (Global)
     'site.description'  => 'Blog do Royopa feito em TextPress',  // Site default description (Global)
