@@ -1,9 +1,9 @@
 {
-"title" : "Calculando o Beta de um Portfólio com Python",
+"title" : "Calculando o Beta de uma ação com Python",
 "author":"Royopa",
 "date":"24-04-2015",
 "tag":"python, finance",
-"slug" : "calculando-o-beta-de-um-portfolio-com-python",
+"slug" : "calculando-o-beta-de-uma-acao-com-python",
 "category":"finance"
 }
 
