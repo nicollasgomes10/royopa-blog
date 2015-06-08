@@ -30,35 +30,35 @@ Os passos a seguir devem ser feitas no computador que tem as suas configuraçõe
 Antes de fazer qualquer coisa, feche o Sublime Text 3.
 
 ```shell
-# Create the sync directory in Dropbox
+#  Cria a pasta de sincronização no Dropbox
 $ mkdir ~/Dropbox/sublime-text-3/
 
-# Move your ST3 "Packages" and "Installed Packages" to Dropbox
+# Move os seus "Packages" e "Installed Packages" do ST3 para o Dropbox
 $ cd ~/.config/sublime-text-3/
 $ mv Packages/ ~/Dropbox/sublime-text-3/
 $ mv Installed\ Packages/ ~/Dropbox/sublime-text-3/
 
-# Then symlink your Dropbox directories back locally
+# Então cria um link simbólico dos diretórios anteriores
 $ ln -s ~/Dropbox/sublime-text-3/Packages/
 $ ln -s ~/Dropbox/sublime-text-3/Installed\ Packages/
 ```
 
-Note that ST3 has three other directories under ~/.config.sublime-text-3/: Cache, Index and Local. Do not sync these, each computer should manage their own local copies.
+Note que o ST3 tem três outros diretórios dentro da pasta ~/.config.sublime-text-3/: Cache, Index e Local. Não os sincronize, pois cada computador deve gerenciar suas próprias cópias locais.
 
 Sincronizando outros computadores
 ---------------------------------
 
-All other computers will now have ~/Dropbox/sublime-text-3/. Follow these steps on each of the computers you have ST3 installed to sync them:
+Todos os outros computadores terão agora ~/Dropbox/sublime-text-3/. Siga estes passos em cada um dos computadores que você tem o ST3 instalado para sincronizá-los:
 
 ```shell
-# Remove the "outdated" directories
+# Remove os diretórios "desatualizados"
 $ cd ~/.config/sublime-text-3/
 $ rm -rf Packages/
 $ rm -rf Installed\ Packages/
 
-# Then symlink your Dropbox directories back locally
+# Então cria links simbólicos dos diretórios anteriores para o Dropbox
 $ ln -s ~/Dropbox/sublime-text-3/Packages/
 $ ln -s ~/Dropbox/sublime-text-3/Installed\ Packages/
 ```
 
-Now when you tweak to your Sublime Text 3 settings, they will propagate automatically. Even new packages get installed everywhere! You'll always feel at home, wherever you are!
+Agora quando você alterar as configurações do seu Sublime Text 3, elas serão propagadas automaticamente. Mesmo novos pacotes serão instalados em todos os lugares! Você sempre se sentirá em casa, onde quer que esteja!
