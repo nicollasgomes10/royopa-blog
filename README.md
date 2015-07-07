@@ -15,14 +15,19 @@ Make sure you have Composer installed, run `composer install`
 To see a real-live page in action, start the PHP built-in web server with
 command:
 
-    $ composer run
+```sh
+composer run
+```
 
 Then, browse to http://localhost:8000/
 
 ## Deploy
 
-    $ php ./vendor/royopa/phploy/bin/phploy.phar --server production
+```sh
+php ./vendor/royopa/phploy/bin/phploy.phar --server production
+```
+or
 
-    or
-
-    $ composer deploy
+```sh
+composer deploy
+```
