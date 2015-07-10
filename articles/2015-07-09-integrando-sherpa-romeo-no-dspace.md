@@ -1,5 +1,5 @@
 {
-"title" : "Integrando SHERP RoMEO no DSpace",
+"title" : "Integrando SHERPA RoMEO no DSpace",
 "author":"Royopa",
 "date":"09-07-2015",
 "tag":"DSpace, SherpaRomeo",
@@ -21,13 +21,12 @@ políticas de arquivamento das editoras. Essas cores foram desenvolvidas a parti
 da lista do projeto RoMEO. Existem quatro categorias de cores, que são descritas
 abaixo:
 
-| Cores RoMEO | Política de arquivamento |
-|---|---|
----------------------------------
-| [Verde](http://www.sherpa.ac.uk/romeo/browse.php?colour=green&la=pt&fIDnum=|&mode=simple) | Pode arquivar a versão preprint e postprint ou Versão/PDF do editor |
-| [Azul](http://www.sherpa.ac.uk/romeo/browse.php?colour=blue&la=pt&fIDnum=|&mode=simple) | Pode arquivar a versão postprint (i.e. o rascunho final após o peer-review) ou Versão/PDF do editor |
-| [Amarelo](http://www.sherpa.ac.uk/romeo/browse.php?colour=yellow&la=pt&fIDnum=|&mode=simple) | Pode arquivar a versão preprint (i.e. antes do peer-review) |
-| [Branco](http://www.sherpa.ac.uk/romeo/browse.php?colour=white&la=pt&fIDnum=|&mode=simple) | O arquivo não é suportado formalmente |
+Cores RoMEO | Política de arquivamento
+--- | ---
+[Verde](http://www.sherpa.ac.uk/romeo/browse.php?colour=green&la=pt&fIDnum=|&mode=simple) | Pode arquivar a versão preprint e postprint ou Versão/PDF do editor
+[Azul](http://www.sherpa.ac.uk/romeo/browse.php?colour=blue&la=pt&fIDnum=|&mode=simple) | Pode arquivar a versão postprint (i.e. o rascunho final após o peer-review) ou Versão/PDF do editor
+[Amarelo](http://www.sherpa.ac.uk/romeo/browse.php?colour=yellow&la=pt&fIDnum=|&mode=simple) | Pode arquivar a versão preprint (i.e. antes do peer-review)
+[Branco](http://www.sherpa.ac.uk/romeo/browse.php?colour=white&la=pt&fIDnum=|&mode=simple) | O arquivo não é suportado formalmente
 
 Integração do SHERPA/RoMEO no DSpace
 ------------------------------------
