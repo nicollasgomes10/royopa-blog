@@ -22,7 +22,7 @@ da lista do projeto RoMEO. Existem quatro categorias de cores, que são descrita
 abaixo:
 
 Cores RoMEO | Política de arquivamento
-:---: | :---:
+:--- | :---
 [Verde][1] | Pode arquivar a versão preprint e postprint ou Versão/PDF do editor
 [Azul][2] | Pode arquivar a versão postprint (i.e. o rascunho final após o peer-review) ou Versão/PDF do editor
 [Amarelo][3] | Pode arquivar a versão preprint (i.e. antes do peer-review)
