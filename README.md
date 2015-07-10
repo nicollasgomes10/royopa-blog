@@ -2,7 +2,14 @@
 
 [![Build Status](https://travis-ci.org/royopa/royopa-blog.svg?branch=master)](https://travis-ci.org/royopa/royopa-blog)
 
-www.royopa.url.ph
+http://royopa.url.ph
+
+FTP host      ftp.royopa.url.ph
+FTP IP        185.28.21.44
+FTP Port      21
+FTP username  u177069854
+FTP password  ••••••••••
+Folder        public_html
 
 This is my blog using [TextPress](http://textpress.shameerc.com).
 
