@@ -72,7 +72,7 @@ http://www.sherpa.ac.uk/romeo/
 https://sites.google.com/site/projectoblimunda/exemplos-internacionais/sherpa-romeo
 
 
-[1]: (http://www.sherpa.ac.uk/romeo/browse.php?colour=green&la=pt&fIDnum=|&mode=simple)
-[2]: (http://www.sherpa.ac.uk/romeo/browse.php?colour=blue&la=pt&fIDnum=|&mode=simple)
-[3]: (http://www.sherpa.ac.uk/romeo/browse.php?colour=yellow&la=pt&fIDnum=|&mode=simple)
-[4]: (http://www.sherpa.ac.uk/romeo/browse.php?colour=white&la=pt&fIDnum=|&mode=simple)
+[1]:http://www.sherpa.ac.uk/romeo/browse.php?colour=green&la=pt&fIDnum=|&mode=simple
+[2]:http://www.sherpa.ac.uk/romeo/browse.php?colour=blue&la=pt&fIDnum=|&mode=simple
+[3]:http://www.sherpa.ac.uk/romeo/browse.php?colour=yellow&la=pt&fIDnum=|&mode=simple
+[4]:http://www.sherpa.ac.uk/romeo/browse.php?colour=white&la=pt&fIDnum=|&mode=simple
