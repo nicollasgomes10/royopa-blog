@@ -23,10 +23,10 @@ abaixo:
 
 Cores RoMEO | Política de arquivamento
 --- | ---
-[Verde](http://www.sherpa.ac.uk/romeo/browse.php?colour=green&la=pt&fIDnum=|&mode=simple) | Pode arquivar a versão preprint e postprint ou Versão/PDF do editor
-[Azul](http://www.sherpa.ac.uk/romeo/browse.php?colour=blue&la=pt&fIDnum=|&mode=simple) | Pode arquivar a versão postprint (i.e. o rascunho final após o peer-review) ou Versão/PDF do editor
-[Amarelo](http://www.sherpa.ac.uk/romeo/browse.php?colour=yellow&la=pt&fIDnum=|&mode=simple) | Pode arquivar a versão preprint (i.e. antes do peer-review)
-[Branco](http://www.sherpa.ac.uk/romeo/browse.php?colour=white&la=pt&fIDnum=|&mode=simple) | O arquivo não é suportado formalmente
+[Verde][1] | Pode arquivar a versão preprint e postprint ou Versão/PDF do editor
+[Azul][2] | Pode arquivar a versão postprint (i.e. o rascunho final após o peer-review) ou Versão/PDF do editor
+[Amarelo][3] | Pode arquivar a versão preprint (i.e. antes do peer-review)
+[Branco][4] | O arquivo não é suportado formalmente
 
 Integração do SHERPA/RoMEO no DSpace
 ------------------------------------
@@ -71,3 +71,8 @@ http://www.sherpa.ac.uk/romeo/
 
 https://sites.google.com/site/projectoblimunda/exemplos-internacionais/sherpa-romeo
 
+
+[1]: (http://www.sherpa.ac.uk/romeo/browse.php?colour=green&la=pt&fIDnum=|&mode=simple)
+[2]: (http://www.sherpa.ac.uk/romeo/browse.php?colour=blue&la=pt&fIDnum=|&mode=simple)
+[3]: (http://www.sherpa.ac.uk/romeo/browse.php?colour=yellow&la=pt&fIDnum=|&mode=simple)
+[4]: (http://www.sherpa.ac.uk/romeo/browse.php?colour=white&la=pt&fIDnum=|&mode=simple)
