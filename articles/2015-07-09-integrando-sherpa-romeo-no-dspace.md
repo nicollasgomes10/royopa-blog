@@ -7,7 +7,7 @@
 "category":"DSpace"
 }
 
-O portal SHERPA/RoMEO (http://www.sherpa.ac.uk/romeo) reúne políticas de 
+O [portal SHERPA/RoMEO][6] reúne políticas de 
 arquivamento de diversas editoras internacionais. Esta ferramenta permite 
 aos usuários e gestores de repositórios consultar as políticas de copyright e 
 auto-arquivamento das revistas e editoras sobre o depósito das publicações em 
@@ -116,7 +116,7 @@ E então quando eu chego até a página do formulário para fazer o upload do ar
 veja que as informações do registro no SHERPA/RoMEO (Publisher Information) são
 exibidas:
 
-![](http://www.royopa.url.ph/themes/royopa-blog/assets/img/sherpa-romeo-upload-arquivos.jpg)
+![][7]
 
 
 Links
@@ -134,3 +134,5 @@ https://sites.google.com/site/projectoblimunda/exemplos-internacionais/sherpa-ro
 [3]:http://www.sherpa.ac.uk/romeo/browse.php?colour=yellow&la=pt&fIDnum=|&mode=simple
 [4]:http://www.sherpa.ac.uk/romeo/browse.php?colour=white&la=pt&fIDnum=|&mode=simple
 [5]:http://www.sherpa.ac.uk/romeo/search.php
+[6]:http://www.sherpa.ac.uk/romeo
+[7]:http://www.royopa.url.ph/themes/royopa-blog/assets/img/sherpa-romeo-upload-arquivos.jpg
