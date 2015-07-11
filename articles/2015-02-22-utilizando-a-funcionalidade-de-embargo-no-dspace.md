@@ -32,7 +32,7 @@ Quando o Embargo é definido, ele se aplica para usuários anônimos ou para qua
 
 Veja na figura abaixo como o AccessStep é exibido:
 
-![](http://www.royopa.url.ph/themes/textpress/assets/img/embargo-simples.png)
+![](http://www.royopa.url.ph/themes/royopa-blog/assets/img/embargo-simples.png)
 
 #####UploadWithEmbargoStep
 
@@ -43,7 +43,7 @@ O formulário do step "UploadWithEmbargoStep" no Embargo Simples exibe dois novo
 
 Veja na figura abaixo como o UploadWithEmbargoStep é exibido:
 
-![](http://www.royopa.url.ph/themes/textpress/assets/img/embargo-simples-UploadWithEmbargoStep.png)
+![](http://www.royopa.url.ph/themes/royopa-blog/assets/img/embargo-simples-UploadWithEmbargoStep.png)
 
 ####Embargo Avançado
 
