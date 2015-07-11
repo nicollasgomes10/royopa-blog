@@ -13,10 +13,10 @@ aos usuários e gestores de repositórios consultar as políticas de copyright e
 auto-arquivamento das revistas e editoras sobre o depósito das publicações em 
 repositórios de acesso aberto.
 
-RoMEO colours
--------------
+Cores do SHERPA/RoMEO
+---------------------
 
-O servico SHERPA/RoMEO utiliza um simples [código de cores](http://www.sherpa.ac.uk/romeo/definitions.php?la=pt&fIDnum=|&mode=simple&version=#colours) para ajudar a consultar as
+O serviço SHERPA/RoMEO utiliza um simples [código de cores](http://www.sherpa.ac.uk/romeo/definitions.php?la=pt&fIDnum=|&mode=simple&version=#colours) para ajudar a consultar as
 políticas de arquivamento das editoras. Essas cores foram desenvolvidas a partir 
 da lista do projeto RoMEO. Existem quatro categorias de cores, que são descritas
 abaixo:
@@ -59,6 +59,12 @@ plugin.named.org.dspace.content.authority.ChoiceAuthority = \
  org.dspace.content.authority.SHERPARoMEOJournalTitle = SRJournalTitle
 
 [Veja esse trecho do arquivo aqui](https://github.com/DSpace/DSpace/blob/master/dspace/config/dspace.cfg#L1590-1596)
+
+Altere a seção abaixo do arquivo dspace.cfg, conforme abaixo:
+
+## Demo: publisher name lookup through SHERPA/RoMEO:
+choices.plugin.dc.publisher = SRPublisher
+choices.presentation.dc.publisher = suggest
 
 
 
