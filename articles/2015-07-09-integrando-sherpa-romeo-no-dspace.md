@@ -43,22 +43,41 @@ publicação e restrições ao lado da opção de seleção de arquivos.
 Mão na massa!
 -------------
 
+Crie sua chave de acesso para a API SHERPA/RoMEO, para ter os benefícios abaixo:
+
+* As aplicações registradas podem exceder o limite de 500 requisições por dia.
+* Os usuários registrados recebem avisos antecipados das mudanças planejadas para
+a API.
+* Estatísticas de uso da API para a sua chave ficam disponíveis mediante solicitação.
+
+Para criar a chave de acesso, use esse link: 
+[http://www.sherpa.ac.uk/romeo/apiregistry.php](http://www.sherpa.ac.uk/romeo/apiregistry.php)
+
 Primeiro configure o controle de autoridade do plugin SHERPA/RoMEO no arquivo
 [dspace]/config/dspace.cfg conforme abaixo: 
 
 ```cfg
+#####  SHERPA/Romeo Integration Settings ####
+# the SHERPA/RoMEO endpoint
 sherpa.romeo.url = http://www.sherpa.ac.uk/romeo/api29.php
-```
-[Veja esse trecho do arquivo aqui](https://github.com/DSpace/DSpace/blob/master/dspace/config/dspace.cfg#L1580)
 
-Altere a seção "Authority Control Settings" do arquivo dspace.cfg, conforme abaixo:
+# to disable the sherpa/romeo integration
+# uncomment the follow line 
+# webui.submission.sherparomeo-policy-enabled = false
+
+# please register for a free api access key to get many benefits
+# http://www.sherpa.ac.uk/news/romeoapikeys.htm
+sherpa.romeo.apikey = YOUR-API-KEY
 
 #####  Authority Control Settings  #####
 plugin.named.org.dspace.content.authority.ChoiceAuthority = \
+# org.dspace.content.authority.SampleAuthority = Sample, \
+# org.dspace.content.authority.LCNameAuthority = LCNameAuthority, \
  org.dspace.content.authority.SHERPARoMEOPublisher = SRPublisher, \
  org.dspace.content.authority.SHERPARoMEOJournalTitle = SRJournalTitle
-
-[Veja esse trecho do arquivo aqui](https://github.com/DSpace/DSpace/blob/master/dspace/config/dspace.cfg#L1590-1596)
+#  org.dspace.content.authority.SolrAuthority = SolrAuthorAuthority
+```
+[Veja esse trecho do arquivo aqui](https://github.com/DSpace/DSpace/blob/master/dspace/config/dspace.cfg#L1578-1596)
 
 Altere a seção abaixo do arquivo dspace.cfg, conforme abaixo:
 
@@ -66,6 +85,18 @@ Altere a seção abaixo do arquivo dspace.cfg, conforme abaixo:
 choices.plugin.dc.publisher = SRPublisher
 choices.presentation.dc.publisher = suggest
 
+## demo: journal title lookup, with ISSN as authority
+choices.plugin.dc.title.alternative = SRJournalTitle
+choices.presentation.dc.title.alternative = suggest
+authority.controlled.dc.title.alternative = true
+
+[Veja esse trecho do arquivo aqui](https://github.com/DSpace/DSpace/blob/master/dspace/config/dspace.cfg#L1666-1673)
+
+E então reinicie o servidor tomcat com o comando abaixo:
+
+```sh
+sudo service tomcat7 restart
+```
 
 
 Links
