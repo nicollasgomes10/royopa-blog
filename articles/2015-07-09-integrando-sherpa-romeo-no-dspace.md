@@ -1,5 +1,5 @@
 {
-"title" : "Integrando SHERPA RoMEO no DSpace",
+"title" : "Integrando SHERPA/RoMEO no DSpace",
 "author":"Royopa",
 "date":"09-07-2015",
 "tag":"DSpace, SherpaRomeo",
@@ -20,11 +20,11 @@ O serviço SHERPA/RoMEO utiliza um simples [código de cores](http://www.sherpa.
 políticas de arquivamento das editoras. Existem quatro categorias de cores, que
 são descritas abaixo:
 
-Cores RoMEO | Política de arquivamento
+Cor | Política de arquivamento
 :--- | :---
 [Verde][1] | Pode arquivar a versão preprint e postprint ou Versão/PDF do editor
-[Azul][2] | Pode arquivar a versão postprint (i.e. o rascunho final após o peer-review) ou Versão/PDF do editor
-[Amarelo][3] | Pode arquivar a versão preprint (i.e. antes do peer-review)
+[Azul][2] | Pode arquivar a versão postprint (ex: o rascunho final após o peer-review) ou Versão/PDF do editor
+[Amarelo][3] | Pode arquivar a versão preprint (ex: antes do peer-review)
 [Branco][4] | O arquivo não é suportado formalmente
 
 Integração do SHERPA/RoMEO no DSpace
@@ -34,7 +34,7 @@ O DSpace 5 acrescenta a funcionalidade de lookup da política SHERPA/RoMEO para 
 interface XMLUI. Essa funcionalidade evita o risco de quebrar as restrições de
 publicação de forma involuntária. 
 
-Habilitando o lookup SHERPA RoMEO no DSpace adicionará informações nos steps
+Habilitando o lookup SHERPA/RoMEO no DSpace adicionará informações nos steps
 de submissão. Depois de selecionar um determinado editor ou jornal no formulário
 de submissão, o DSpace automaticamente inclui informações sobre permissões de
 publicação e restrições ao lado da opção de seleção de arquivos.
@@ -68,29 +68,6 @@ sherpa.romeo.url = http://www.sherpa.ac.uk/romeo/api29.php
 # http://www.sherpa.ac.uk/news/romeoapikeys.htm
 sherpa.romeo.apikey = YOUR-API-KEY
 
-#####  Authority Control Settings  #####
-plugin.named.org.dspace.content.authority.ChoiceAuthority = \
-# org.dspace.content.authority.SampleAuthority = Sample, \
-# org.dspace.content.authority.LCNameAuthority = LCNameAuthority, \
- org.dspace.content.authority.SHERPARoMEOPublisher = SRPublisher, \
- org.dspace.content.authority.SHERPARoMEOJournalTitle = SRJournalTitle
-#  org.dspace.content.authority.SolrAuthority = SolrAuthorAuthority
-```
-[Veja esse trecho do arquivo aqui](https://github.com/DSpace/DSpace/blob/master/dspace/config/dspace.cfg#L1578-1596)
-
-Altere a seção abaixo do arquivo dspace.cfg, conforme abaixo:
-
-## Demo: publisher name lookup through SHERPA/RoMEO:
-choices.plugin.dc.publisher = SRPublisher
-choices.presentation.dc.publisher = suggest
-
-## demo: journal title lookup, with ISSN as authority
-choices.plugin.dc.title.alternative = SRJournalTitle
-choices.presentation.dc.title.alternative = suggest
-authority.controlled.dc.title.alternative = true
-
-[Veja esse trecho do arquivo aqui](https://github.com/DSpace/DSpace/blob/master/dspace/config/dspace.cfg#L1666-1673)
-
 E então reinicie o servidor tomcat com o comando abaixo:
 
 ```sh
@@ -101,7 +78,7 @@ Testando
 --------
 
 Para testar a funcionalidade, primeiro pesquisei um registro na [página de busca do SHERPA/RoMEO][5]
-com o ISSN 1210-8510, que é um Jornal com a cor branca, conforme mostrado na 
+com o **ISSN 1210-8510**, que é um Jornal com a cor **branca**, conforme mostrado na 
 imagem abaixo:
 
 ![](http://www.royopa.url.ph/themes/royopa-blog/assets/img/sherpa-romeo-consulta-registro-issn.jpg)
@@ -111,22 +88,13 @@ figura abaixo:
 
 ![](http://www.royopa.url.ph/themes/royopa-blog/assets/img/sherpa-romeo-upload-inclusao-de-issn.jpg)
 
-E então quando eu chego até a página do formulário para fazer o upload do arquivo,
-veja que as informações do registro no SHERPA/RoMEO (Publisher Information) são
-exibidas:
+E então quando eu chego no step para fazer o upload do arquivo, veja que as
+informações do registro no SHERPA/RoMEO (Publisher Information) são exibidas:
 
-![][7]
+![](http://www.royopa.url.ph/themes/royopa-blog/assets/img/sherpa-romeo-upload-arquivos.jpg)
 
-
-Links
------
-
-https://wiki.duraspace.org/display/DSPACE/Authority+Control+of+Metadata+Values
-
-http://www.sherpa.ac.uk/romeo/
-
-https://sites.google.com/site/projectoblimunda/exemplos-internacionais/sherpa-romeo
-
+Veremos num próximo artigo como incluir um controle de autoridades para os 
+metadados Publisher e JournalTitle, até lá!
 
 [1]:http://www.sherpa.ac.uk/romeo/browse.php?colour=green&la=pt&fIDnum=|&mode=simple
 [2]:http://www.sherpa.ac.uk/romeo/browse.php?colour=blue&la=pt&fIDnum=|&mode=simple
@@ -134,5 +102,3 @@ https://sites.google.com/site/projectoblimunda/exemplos-internacionais/sherpa-ro
 [4]:http://www.sherpa.ac.uk/romeo/browse.php?colour=white&la=pt&fIDnum=|&mode=simple
 [5]:http://www.sherpa.ac.uk/romeo/search.php
 [6]:http://www.sherpa.ac.uk/romeo
-[7]:http://www.royopa.url.ph/themes/royopa-blog/assets/img/sherpa-romeo-upload-arquivos.jpg
-[8]:
