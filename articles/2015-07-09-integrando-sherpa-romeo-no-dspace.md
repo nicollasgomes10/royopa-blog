@@ -98,6 +98,26 @@ E então reinicie o servidor tomcat com o comando abaixo:
 sudo service tomcat7 restart
 ```
 
+Testando
+--------
+
+Para testar a funcionalidade, primeiro pesquisei um registro na [página de busca do SHERPA/RoMEO][5]
+com o ISSN 1210-8510, que é um Jornal com a cor branca, conforme mostrado na 
+imagem abaixo:
+
+![](http://www.royopa.url.ph/themes/royopa-blog/assets/img/sherpa-romeo-consulta-registro-issn.jpg)
+
+E então inclui um novo item no DSpace e usei o ISSN 1210-8510, como mostrado na
+figura abaixo:
+
+![](http://www.royopa.url.ph/themes/royopa-blog/assets/img/sherpa-romeo-upload-inclusao-de-issn.jpg)
+
+E então quando eu chego até a página do formulário para fazer o upload do arquivo,
+veja que as informações do registro no SHERPA/RoMEO (Publisher Information) são
+exibidas:
+
+![](http://www.royopa.url.ph/themes/royopa-blog/assets/img/sherpa-romeo-upload-arquivos.jpg)
+
 
 Links
 -----
@@ -113,3 +133,4 @@ https://sites.google.com/site/projectoblimunda/exemplos-internacionais/sherpa-ro
 [2]:http://www.sherpa.ac.uk/romeo/browse.php?colour=blue&la=pt&fIDnum=|&mode=simple
 [3]:http://www.sherpa.ac.uk/romeo/browse.php?colour=yellow&la=pt&fIDnum=|&mode=simple
 [4]:http://www.sherpa.ac.uk/romeo/browse.php?colour=white&la=pt&fIDnum=|&mode=simple
+[5]:http://www.sherpa.ac.uk/romeo/search.php
