@@ -17,9 +17,8 @@ Cores do SHERPA/RoMEO
 ---------------------
 
 O serviço SHERPA/RoMEO utiliza um simples [código de cores](http://www.sherpa.ac.uk/romeo/definitions.php?la=pt&fIDnum=|&mode=simple&version=#colours) para ajudar a consultar as
-políticas de arquivamento das editoras. Essas cores foram desenvolvidas a partir 
-da lista do projeto RoMEO. Existem quatro categorias de cores, que são descritas
-abaixo:
+políticas de arquivamento das editoras. Existem quatro categorias de cores, que
+são descritas abaixo:
 
 Cores RoMEO | Política de arquivamento
 :--- | :---
@@ -136,3 +135,4 @@ https://sites.google.com/site/projectoblimunda/exemplos-internacionais/sherpa-ro
 [5]:http://www.sherpa.ac.uk/romeo/search.php
 [6]:http://www.sherpa.ac.uk/romeo
 [7]:http://www.royopa.url.ph/themes/royopa-blog/assets/img/sherpa-romeo-upload-arquivos.jpg
+[8]:
