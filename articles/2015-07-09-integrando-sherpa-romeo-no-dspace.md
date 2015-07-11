@@ -94,8 +94,8 @@ informações do registro no SHERPA/RoMEO (Publisher Information) são exibidas:
 
 ![](http://www.royopa.url.ph/themes/royopa-blog/assets/img/sherpa-romeo-upload-arquivos.jpg)
 
-Veremos num próximo artigo como incluir um controle de autoridades para os 
-metadados Publisher e JournalTitle, até lá!
+Veremos num próximo artigo como incluir um controle de autoridades usando a mesma 
+API do SHERPA/RoMEO, até lá!
 
 [1]:http://www.sherpa.ac.uk/romeo/browse.php?colour=green&la=pt&fIDnum=|&mode=simple
 [2]:http://www.sherpa.ac.uk/romeo/browse.php?colour=blue&la=pt&fIDnum=|&mode=simple
