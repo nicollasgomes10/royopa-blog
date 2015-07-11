@@ -67,6 +67,7 @@ sherpa.romeo.url = http://www.sherpa.ac.uk/romeo/api29.php
 # please register for a free api access key to get many benefits
 # http://www.sherpa.ac.uk/news/romeoapikeys.htm
 sherpa.romeo.apikey = YOUR-API-KEY
+```
 
 E então reinicie o servidor tomcat com o comando abaixo:
 
