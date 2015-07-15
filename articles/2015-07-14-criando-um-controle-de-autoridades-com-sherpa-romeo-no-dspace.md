@@ -44,7 +44,7 @@ Altere a seção "Demo: publisher name lookup through SHERPA/RoMEO:" do arquivo
 ```cfg
 ## Demo: publisher name lookup through SHERPA/RoMEO:
 choices.plugin.dc.publisher = SRPublisher
-choices.presentation.dc.publisher = suggest
+choices.presentation.dc.publisher = lookup
 ```
 
 Altere a seção "demo: journal title lookup, with ISSN as authority" do arquivo 
@@ -53,7 +53,7 @@ Altere a seção "demo: journal title lookup, with ISSN as authority" do arquivo
 ```cfg
 ## demo: journal title lookup, with ISSN as authority
 choices.plugin.dc.title.alternative = SRJournalTitle
-choices.presentation.dc.title.alternative = suggest
+choices.presentation.dc.title.alternative = lookup
 authority.controlled.dc.title.alternative = true
 ```
 
@@ -66,3 +66,8 @@ sudo service tomcat7 restart
 Testando
 --------
 
+Para testar a funcionalidade, basta adicionar um item numa coleção e você verá
+que do lado direito dos campos "Other Titles" e "Publilsher" foram adicionados 
+os botões lookup para buscar e selecionar os valores do SHERPA/RoMEO.
+
+![](http://www.royopa.url.ph/themes/royopa-blog/assets/img/sherpa-romeo-form-lookup.jpg)
