@@ -29,10 +29,12 @@ sherpa.romeo.url = http://www.sherpa.ac.uk/romeo/api29.php
 Altere a seção "Authority Control Settings" do arquivo [dspace]/config/dspace.cfg,
 conforme abaixo:
 
+```cfg
 #####  Authority Control Settings  #####
 plugin.named.org.dspace.content.authority.ChoiceAuthority = \
  org.dspace.content.authority.SHERPARoMEOPublisher = SRPublisher, \
  org.dspace.content.authority.SHERPARoMEOJournalTitle = SRJournalTitle
+```
 
 [Veja esse trecho do arquivo aqui](https://github.com/DSpace/DSpace/blob/master/dspace/config/dspace.cfg#L1590-1596)
 
