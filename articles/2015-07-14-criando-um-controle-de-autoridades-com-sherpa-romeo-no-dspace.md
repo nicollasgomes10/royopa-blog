@@ -7,12 +7,12 @@
 "category":"DSpace"
 }
 
-Antes de iniciar, leia o post [Integrando SHERPA/RoMEO no DSpace](http://www.royopa.url.ph/2015/07/09/integrando-sherpa-romeo-no-dspace) para ter mais informações do 
-SHERPA RoMEO e fazer as configurações iniciais no seu repositório DSpace.
-
 O DSpace permite que você utilize um controle de autoridades para os campos
-da editora e título do jornal usando a API do SHERPA/RoMEO. vemos abaixo como 
+da editora e título do jornal usando a API do SHERPA/RoMEO. Veremos abaixo como 
 habilitar essa funcionalidade.
+
+Antes de iniciar, leia o post [Integrando SHERPA/RoMEO no DSpace](http://www.royopa.url.ph/2015/07/09/integrando-sherpa-romeo-no-dspace) para ter mais informações sobre 
+o SHERPA RoMEO e fazer as configurações iniciais no seu repositório DSpace.
 
 Mão na massa!
 -------------
