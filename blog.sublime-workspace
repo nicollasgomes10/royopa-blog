@@ -1,0 +1,694 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dataRece",
+				"dataRecebimentoEN"
+			],
+			[
+				"query",
+				"querySolr"
+			],
+			[
+				"unidade",
+				"unidade_id"
+			],
+			[
+				"emiss",
+				"emissor_id"
+			],
+			[
+				"sta",
+				"status_id"
+			],
+			[
+				"statu",
+				"status_id"
+			],
+			[
+				"quer",
+				"querySolr"
+			],
+			[
+				"reu",
+				"resultsSolr"
+			],
+			[
+				"enit",
+				"entities"
+			],
+			[
+				"stat",
+				"status_id"
+			],
+			[
+				"status",
+				"status_id"
+			],
+			[
+				"entit",
+				"entities"
+			],
+			[
+				"para",
+				"parameter"
+			],
+			[
+				"recu",
+				"recursoMulta"
+			],
+			[
+				"dataEmissa",
+				"dataEmissaoEN"
+			],
+			[
+				"dataE",
+				"dataEnvioEN"
+			],
+			[
+				"getPrimeiroDia",
+				"getPrimeiroDiaByAno"
+			],
+			[
+				"data",
+				"dataReferencia"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"benchma",
+				"benchmark"
+			],
+			[
+				"ldaphan",
+				"ldapHandle"
+			],
+			[
+				"filer",
+				"filter"
+			],
+			[
+				"empregado",
+				"empregadoLdap"
+			],
+			[
+				"enitty",
+				"entity"
+			],
+			[
+				"connect",
+				"connectionParams"
+			],
+			[
+				"empregad",
+				"empregadoLdap"
+			],
+			[
+				"emre",
+				"empregadoLdap"
+			],
+			[
+				"telefone",
+				"telefoneComercial2"
+			],
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"getTelefonesD",
+				"getTelefonesFromLdap"
+			],
+			[
+				"strlow",
+				"strtolower"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "Package Control: ins",
+		"selected_items":
+		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: lis",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/royopa-blog"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/sicde_dev/create_index.py",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Entity/Demanda.php",
+		"/C/xampp/htdocs/python-rodrigo/rotinas_diarias/meu_ip3.py",
+		"/C/TEMP/fz3temp-1/core.properties",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Default/head.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Default/index.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Default/base.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/public/js/main.js",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Default/js_footer.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Form/RespostaType.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Form/RecursoMultaType.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Form/MultaType.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Form/DemandaType.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Resposta/edit_form.html.twig",
+		"/C/xampp/htdocs/myblog/source/_posts/2011-12-20-happy-birthday-sculpin.md",
+		"/C/xampp/htdocs/myblog/source/_posts/2013-07-30-from-stupid-to-solid-code.md",
+		"/C/xampp/htdocs/myblog/source/_posts/2015-07-14-criando-um-controle-de-autoridades-com-sherpa-romeo-no-dspace.md",
+		"/C/xampp/htdocs/myblog/publish.sh",
+		"/C/xampp/htdocs/myblog/source/_posts/2012-09-29-symfony-live-hacking-day.md",
+		"/C/xampp/htdocs/royopa-blog/articles/2015-04-12-solid-os-primeiros-5-principios-do-design-orientado-a-objeto.md",
+		"/C/xampp/htdocs/royopa-blog/articles/2013-07-30-from-stupid-to-solid-code.md",
+		"/C/xampp/htdocs/myblog/.gitignore",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Demanda/index.html.twig",
+		"/C/xampp/htdocs/sicde_dev/web/bundles/app/js/main.js",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Controller/DemandaController.php",
+		"/C/xampp/htdocs/sicde_dev/vendor/floriansemm/solr-bundle/FS/SolrBundle/Tests/Query/SolrQueryTest.php",
+		"/C/xampp/htdocs/sicde_dev/vendor/floriansemm/solr-bundle/FS/SolrBundle/Query/SolrQuery.php",
+		"/C/xampp/htdocs/sicde_dev/app/config/config.yml",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Controller/DefaultController.php",
+		"/C/xampp/htdocs/sicom_dev/README.md",
+		"/C/xampp/htdocs/sicde_dev/app/AppKernel.php",
+		"/C/xampp/htdocs/sicde_dev/project.sublime-project",
+		"/C/xampp/htdocs/sicde_dev/vendor/solarium/solarium/examples/2.1.5.9-spellcheck.php",
+		"/C/xampp/htdocs/sicde_dev/vendor/solarium/solarium/examples/2.1.1-query-params.php",
+		"/C/xampp/htdocs/sicde_dev/vendor/solarium/solarium/examples/1.2-basic-select.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Repository/DemandaRepository.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Default/navbar.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Demanda/consulta.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Entity/Uploadable.php",
+		"/C/xampp/htdocs/sicde_dev/vendor/floriansemm/solr-bundle/FS/SolrBundle/Repository/Repository.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Form/DemandaConsultaType.php",
+		"/C/xampp/htdocs/sicde_dev/deploy.ini",
+		"/C/xampp/htdocs/sicde_dev/composer.json",
+		"/C/xampp/htdocs/advanced/composer.json",
+		"/C/xampp/htdocs/sicde_dev/.gitignore",
+		"/C/xampp/htdocs/stack_overflow/composer.json",
+		"/C/xampp/htdocs/yii2-qa-master/README.md",
+		"/C/xampp/htdocs/yii2-qa-master/Bootstrap.php",
+		"/C/xampp/htdocs/yii2-qa-master/migrations/m140314_120159_create_qa_question_table.php",
+		"/C/xampp/htdocs/sicom_dev/composer.json",
+		"/C/c090762/Apps/SublimeTextBuild3065x64/Data/Packages/User/phpcs.sublime-settings",
+		"/C/c090762/Apps/SublimeTextBuild3065x64/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/C/xampp/htdocs/royopa-blog/README.md",
+		"/C/xampp/htdocs/royopa-blog/deploy.ini.dist",
+		"/C/xampp/htdocs/royopa-blog/deploy.ini",
+		"/C/xampp/htdocs/royopa-blog/articles/2015-07-10-iniciando-com-o-apache-solr.md",
+		"/C/xampp/htdocs/sicde_dev/README.md",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Demanda/show.html.twig",
+		"/C/xampp/htdocs/sicde_dev/app/Resources/FOSUserBundle/views/Security/login.html.twig",
+		"/C/xampp/htdocs/gerat-sf/src/Viter/Gerat/FundosBundle/Resources/views/Default/lista_fundos.html.twig",
+		"/C/xampp/htdocs/gerat-sf/src/Viter/Gerat/FundosBundle/Entity/Fundo.php",
+		"/C/xampp/htdocs/gerat-sf/src/Viter/Gerat/FundosBundle/Model/Fundos.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Entity/Resposta.php",
+		"/C/xampp/htdocs/sicom_dev/src/Gerat/SicomBundle/Controller/TesteController.php",
+		"/C/xampp/htdocs/sicom_dev/src/Gerat/SicomBundle/Resources/views/Default/navbar.html.twig",
+		"/C/xampp/htdocs/sicom_dev/src/Gerat/SicomBundle/Controller/ComiteController.php",
+		"/C/xampp/htdocs/sicom_dev/src/Gerat/SicomBundle/Repository/ComiteRepository.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/config/services.yml",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Controller/DemandaStatusAdminController.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Admin/DemandaStatusAdmin.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Demanda/edit.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Multa/show.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Demanda/show_demanda.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Entity/Multa.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Entity/RecursoMulta.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Entity/DemandaStatus.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Resposta/show.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Multa/show_recurso.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Resposta/show_resposta.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Multa/show_multa.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Multa/show_recurso_multa.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Multa/edit_form.html.twig",
+		"/C/xampp/htdocs/financial-crawler/deploy.ini",
+		"/C/TEMP/fz3temp-1/controllers.php",
+		"/C/xampp/htdocs/financial-crawler/src/controllers.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Entity/Recurso.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Form/RecursoDemandaType.php",
+		"/C/Users/c090762/Downloads/2015-07-07-sublime-text-3-para-desenvolvedores-php.md",
+		"/C/Users/c090762/Downloads/2015-07-06-o-full-text-search-do-postgres-e-bom-o-suficiente.md",
+		"/C/Users/c090762/Downloads/2015-07-07-sublime-text-para-desenvolvedores-php.md",
+		"/C/xampp/htdocs/gerat-sf/src/Viter/Gerat/RotinaDiariaBundle/Resources/views/RotinaDiaria/index.html.twig",
+		"/C/xampp/htdocs/gerat-sf/src/Viter/Gerat/GeratBundle/Controller/AtivosPorEmissorController.php",
+		"/C/xampp/htdocs/gerat-sf/src/Viter/Gerat/GeratBundle/Resources/views/AtivosPorEmissor/lista_tp.html.twig",
+		"/C/xampp/htdocs/gerat-sf/src/Viter/Gerat/GeratBundle/Resources/views/Default/navbar.html.twig",
+		"/C/xampp/htdocs/gerat-sf/src/Viter/Gerat/GeratBundle/Model/ListaAtivosPorEmissorTitulosPublicos.php",
+		"/C/xampp/htdocs/gerat-sf/src/Viter/Gerat/GeratBundle/Form/ConsultaAtivosPorEmissorType.php",
+		"/C/xampp/htdocs/gerat-sf/src/Viter/Gerat/GeratBundle/Model/ListaAtivosPorEmissor.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Entity/Unidade.php",
+		"/C/xampp/htdocs/gerat-sf/src/Viter/Gerat/GeratBundle/Resources/views/Default/head.html.twig",
+		"/C/xampp/htdocs/gerat-sf/src/Viter/Gerat/GeratBundle/Resources/views/AtivosPorEmissor/lista.html.twig",
+		"/Y/assets/bootstrap-datepicker/CHANGELOG.md",
+		"/C/TEMP/fz3temp-1/teste_php.php",
+		"/C/TEMP/fz3temp-1/ldap.php",
+		"/C/xampp/htdocs/info.php",
+		"/C/TEMP/fz3temp-1/index.php",
+		"/C/xampp/htdocs/sicde_dev/sftp-config.json",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Demanda/new.html.twig",
+		"/C/xampp/htdocs/sicom_dev/src/Gerat/SicomBundle/Form/ComiteType.php",
+		"/C/xampp/htdocs/sicom_dev/src/Gerat/SicomBundle/Resources/views/Comite/tab_comite.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/public/css/main.css",
+		"/C/xampp/htdocs/empregados-sf/src/ViterBundle/Resources/views/Default/index.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Form/DataTransformer/FloatTransformer.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Form/DataTransformer/RespostaTransformer.php",
+		"/C/xampp/htdocs/empregados-sf/src/ViterBundle/Form/EmpregadoType.php",
+		"/C/xampp/htdocs/empregados-sf/src/ViterBundle/Form/EnderecoType.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Controller/RespostaController.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Resposta/edit.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Resposta/index.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Resposta/new.html.twig",
+		"/C/xampp/htdocs/sicom_dev/src/Gerat/SicomBundle/Controller/DocumentoController.php",
+		"/C/xampp/htdocs/sicde_dev/app/Resources/views/base.html.twig",
+		"/C/xampp/htdocs/sicom_dev/src/Gerat/SicomBundle/Form/DocumentoType.php",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/public/css/small-business.css",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Default/flash_messages.html.twig",
+		"/C/xampp/htdocs/sicde_dev/src/AppBundle/Resources/views/Default/footer.html.twig",
+		"/C/Users/c090762/Downloads/startbootstrap-small-business-1.0.3/startbootstrap-small-business-1.0.3/index.html",
+		"/C/xampp/htdocs/sicde_dev/app/config/routing.yml",
+		"/C/xampp/htdocs/sicde_dev/src/Gerat/ConformidadeBundle/Controller/DefaultController.php"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\xampp\\htdocs\\sicde_dev\\src\\AppBundle\\Form",
+			"C:\\xampp\\htdocs\\sicde_dev\\vendor\\floriansemm\\solr-bundle\\FS\\SolrBundle",
+			"C:\\xampp\\htdocs\\sicde_dev\\vendor\\floriansemm\\solr-bundle\\FS",
+			"C:\\xampp\\htdocs\\sicde_dev\\vendor\\floriansemm",
+			"C:\\xampp\\htdocs\\sicde_dev",
+			"C:\\xampp\\htdocs\\sicde_dev\\src\\AppBundle",
+			"C:\\xampp\\htdocs\\sicom_dev\\src\\Gerat\\SicomBundle\\Controller",
+			"C:\\xampp\\htdocs\\gerat-sf",
+			"C:\\xampp\\htdocs\\sicde_dev\\src\\AppBundle",
+			"C:\\xampp\\htdocs\\sicde_dev\\src\\AppBundle\\Entity",
+			"C:\\xampp\\htdocs\\sicde_dev\\src\\AppBundle\\Resources\\views",
+			"C:\\xampp\\htdocs\\gerat-sf\\src\\Viter\\Gerat\\GeratBundle\\Model",
+			"C:\\xampp\\htdocs\\gerat-sf\\vendor\\sensio",
+			"C:\\xampp\\htdocs\\sicom_dev\\src\\Gerat\\SicomBundle\\Controller",
+			"C:\\xampp\\htdocs\\gerat-sf\\src\\Viter\\Gerat",
+			"C:\\xampp\\htdocs\\morse-php-master",
+			"C:\\xampp\\htdocs\\sicde_dev\\src\\AppBundle\\",
+			"C:\\xampp\\htdocs\\sicde_dev\\src\\AppBundle\\Controller	",
+			"C:\\xampp\\htdocs\\sicde_dev",
+			"C:\\xampp\\htdocs\\sicom_dev\\app",
+			"C:\\xampp\\htdocs\\gerat-sf\\app",
+			"C:\\xampp\\htdocs\\sicde_dev\\app",
+			"C:\\xampp\\htdocs\\sicom_dev",
+			"C:\\xampp\\htdocs\\sicde_dev\\src\\AppBundle\\Resources\\views\\Default",
+			"AppBundle",
+			"C:\\xampp\\htdocs\\viter-api",
+			"C:\\xampp\\htdocs\\viter-api\\config\\autoload",
+			"C:\\xampp\\htdocs\\viter-api",
+			"C:\\xampp\\htdocs\\empregados-sf",
+			"C:\\xampp\\htdocs\\gerat-sf",
+			"C:\\xampp\\htdocs\\viter-api\\config",
+			"C:\\xampp\\htdocs\\empregados-sf",
+			"C:\\xampp\\htdocs\\viter-api",
+			"C:\\xampp\\htdocs\\empregados-sf\\src\\ViterBundle",
+			"C:\\xampp\\htdocs\\empregados-sf",
+			"C:\\xampp\\htdocs\\empregados-sf\\app\\config",
+			"C:\\xampp\\htdocs\\empregados-sf\\src\\ViterBundle\\Resources\\views",
+			"C:\\xampp\\htdocs\\sicom_dev\\src\\Gerat\\SicomBundle\\Entity",
+			"C:\\xampp\\htdocs\\empregados-sf\\app\\config",
+			"C:\\xampp\\htdocs\\empregados-silex\\src\\Viter\\Controller",
+			"C:\\xampp\\htdocs\\gerat-sf\\src\\Viter\\Gerat\\LiquidezBundle",
+			"C:\\xampp\\htdocs\\gerat-sf"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"filest",
+			"file",
+			"'class' => 'form-control filestyle'",
+			"input",
+			"validaDemanda",
+			"data de ",
+			"jquery",
+			"datepic",
+			"picker",
+			"jquery",
+			"datepicker",
+			"www.gerat",
+			"searchTerms",
+			"createqueryWithsear",
+			"addSearchTerm",
+			"_s",
+			"SEARCHTERMS",
+			"addSearchTerm",
+			"filterqUERYsOLR",
+			"LowerCaseFilterFactory",
+			"getSearchSolr",
+			"solr",
+			"fundo",
+			"consulta",
+			"repositor",
+			"processaCons",
+			"consulta",
+			"processa_cons",
+			"demanda_",
+			" *',",
+			"deplo",
+			"request->",
+			"->get('solr')",
+			"text",
+			"fos",
+			"php",
+			"form-signin",
+			"remove_cache_folder_prod",
+			"'required' => true,",
+			"ComiteRepository",
+			"validaNumerosMulta",
+			"isNumeric",
+			"validaNumerosMulta",
+			"validaMulta",
+			"removerAnexo",
+			"remover",
+			"                ",
+			"hide",
+			"appbundle_demanda_multa_",
+			"dadosMulta",
+			"recurso",
+			"cascade",
+			"recursos",
+			"setRecurso",
+			"isDeferido",
+			"GETrECURSOS",
+			"recurso",
+			"'required' => true,",
+			"user",
+			"createConsultaTitulosPublicosForm",
+			"v",
+			" %}",
+			"fillEmbedF",
+			"setData",
+			"DataLimitePagamen",
+			"delete",
+			"files",
+			"dataPagamento",
+			"table_export",
+			"valor da mul",
+			"formataNumero",
+			"formata",
+			"\n            ",
+			"console.lo",
+			"\n    ",
+			"formataNumero",
+			"multa",
+			"'number'",
+			"isNumeric",
+			"2, '.', ','",
+			"isNumber(",
+			"validaNUmerosM",
+			"validaNUmeros",
+			"validaDemanda",
+			"validar",
+			"        ",
+			"bootstrap-datepicker.pt-BR.min.js",
+			"/**\n",
+			"ata limite",
+			"ata limite de resposta",
+			"limite",
+			"resposta",
+			"retorno",
+			"resposta",
+			"(\n",
+			"ataLImiteResposta",
+			"ataLimiteResposta",
+			"dataLimiteResposta",
+			"createDeleteForm",
+			"delete",
+			"Tem certeza que deseja remover esse registro",
+			"remover esse",
+			"edit",
+			"newAct",
+			"enderec",
+			"enderecoAta",
+			"endereco",
+			"validaRespo",
+			"multa",
+			"fillRes",
+			"save",
+			"fillresposta",
+			"isValid",
+			"multa",
+			"entity",
+			"(\\DateTime ",
+			"->addModelTransformer(new FloatTransformer)",
+			"->addModelTransformer(new FloatTransformer);",
+			"'money'",
+			"edit_form.",
+			"edit_form.resposta",
+			"confirmDelete",
+			"createDeleteForm",
+			"edit_edit_form.",
+			"form.",
+			"isValid",
+			"NotBlank",
+			"resposta"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'class' => 'form-control'",
+			"',",
+			"->get('solr.client')",
+			"'required' => false,",
+			"DemandaRepository",
+			"    ",
+			"appbundle_demanda_multa_recurso_",
+			"deferido",
+			"'required' => false,",
+			"dataLimitePagamento",
+			"'money'",
+			"2, ',', '.'",
+			"$.isNumeric(",
+			"",
+			"ataLimiteRecurso",
+			"(",
+			"//->addModelTransformer(new FloatTransformer)",
+			"->addModelTransformer(new FloatTransformer)",
+			"'number'",
+			"form.",
+			"edit_form.multa",
+			"edit_form.",
+			"$resposta",
+			"edit_form.",
+			"protected ",
+			"protected $",
+			"public function setFile($file)",
+			"implements UploadableInterface",
+			"d-m-Y",
+			"endereco",
+			"if (count($data) == 0) {",
+			"[SIRAT].[dbo].[Bench_Fator]",
+			"(FundoDiario $fundoDiario)",
+			"getPenultimaDataMesAtual",
+			"$this->assertEquals($dataEsperada, $dataRetorno);",
+			"(\\DateTime $dataReferencia)",
+			"Cdi::",
+			"* @param \\DateTime data",
+			"$data",
+			"* @param \\DateTime $data",
+			"d-m-Y",
+			"CO_DEMANDA_TIPO",
+			"DemandaTipo",
+			"unidadesResponsaveis",
+			"@ORM\\ManyToMany",
+			"$this->enderecoDocumento",
+			"Parâmetros",
+			"sicde_admin",
+			"AppBundle:",
+			"app.admin.",
+			"AppBundle\\",
+			"Gerat\\AppBundle\\",
+			"CNPJ",
+			"OcorrenciaTipo",
+			"asset('bundles/app/",
+			"AppBundle",
+			"form.funcao",
+			"form.cargo",
+			"form.unidade",
+			"unidade",
+			"') }}\" rel=\"stylesheet\" type=\"text/css\" />",
+			"') }}\"></script>",
+			"{{ asset('",
+			"{% extends 'ViterBundle:Default:base.html.twig' %}",
+			"\\;",
+			"public function set",
+			"app.session.flashbag.get",
+			"app.session.getFlash",
+			"public function set",
+			"public function",
+			"public function set",
+			"$this->empregado->",
+			"$data['",
+			"') }}\"></script>",
+			"css') }}\"",
+			"asset('"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 209.0
+	},
+	"pinned_build_system": "",
+	"project": "blog.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 326.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
