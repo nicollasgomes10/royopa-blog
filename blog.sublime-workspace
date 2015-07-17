@@ -131,6 +131,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "articles/2014-09-25-events-listeners-e-subscribers-no-symfony-2.md",
+			"settings":
+			{
+				"buffer_size": 5089,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -184,7 +192,8 @@
 	},
 	"expanded_folders":
 	[
-		"/C/xampp/htdocs/royopa-blog"
+		"/C/xampp/htdocs/royopa-blog",
+		"/C/xampp/htdocs/royopa-blog/articles"
 	],
 	"file_history":
 	[
@@ -596,8 +605,42 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "articles/2014-09-25-events-listeners-e-subscribers-no-symfony-2.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5089,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								216,
+								216
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2040.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
