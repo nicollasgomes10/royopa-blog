@@ -11,9 +11,7 @@ Hoje eu reinstalei o meu xUbuntu do notebook e sei que dá o maior trabalho para
 
 Espero que seja útil! Tradução do artigo [Sync Sublime Text 3 settings with Dropbox](http://www.alexconrad.org/2013/07/sync-sublime-text-3-settings-with.html) do [Alex Conrad](https://twitter.com/alexconrad).
 
-Recentemente eu atualizei para o Subliem Text 3 (ST3) 
-
-I recently upgraded to Sublime Text 3 (ST3) e achei que era uma boa hora para descobrir como sincronizar as minhas preferências do ST3 entre os computadores do meu trabalho e de casa. Especialmente por que o ST3 usa o Python 3: nem todos os plugins disponíveis no Sublime Package Control funcionam no Python 3, então frequentemente eu tenho que fazer a instalação manual, o que é muito chato se você tem que fazer em todos os outros computadores que rodam o Sublime Text 3.
+Recentemente eu atualizei para o Sublime Text 3 (ST3) e achei que era uma boa hora para descobrir como sincronizar as minhas preferências do ST3 entre os computadores do meu trabalho e de casa. Especialmente por que o ST3 usa o Python 3: nem todos os plugins disponíveis no Sublime Package Control funcionam no Python 3, então frequentemente eu tenho que fazer a instalação manual, o que é muito chato se você tem que fazer em todos os outros computadores que rodam o Sublime Text 3.
 
 Algumas das minhas configurações
 --------------------------------
@@ -57,8 +55,21 @@ $ rm -rf Packages/
 $ rm -rf Installed\ Packages/
 
 # Então cria links simbólicos dos diretórios anteriores para o Dropbox
-$ ln -s ~/Dropbox/sublime-text-3/Packages/
-$ ln -s ~/Dropbox/sublime-text-3/Installed\ Packages/
+$ ln -s ~/Dropbox/Shared/sublime-text-3/Packages/
+$ ln -s ~/Dropbox/Shared/sublime-text-3/Installed\ Packages/
+```
+
+##No Windows 7+
+
+```shell
+# Remove os diretórios "desatualizados"
+$ CD "C:\Users\[meu_usuario]\AppData\Roaming\Sublime Text 3"
+$ RD /S /Q "Packages"
+$ RD /S /Q "Installed Packages"
+
+# Então cria links simbólicos dos diretórios anteriores para o Dropbox
+$ mklink /D "Packages" "C:\Users\[meu_usuario]2\Dropbox\Shared\sublime-text-3\Packages"
+$ mklink /D "Installed Packages" "C:\Users\[meu_usuario]\Dropbox\Shared\sublime-text-3\Installed Packages"
 ```
 
 Agora quando você alterar as configurações do seu Sublime Text 3, elas serão propagadas automaticamente. Mesmo novos pacotes serão instalados em todos os lugares! Você sempre se sentirá em casa, onde quer que esteja!
