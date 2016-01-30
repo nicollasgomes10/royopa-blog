@@ -1,6 +1,12 @@
 <?php
+$baseurl = 'http://www.royopa.url.ph';
+
+if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1' && $_SERVER['SERVER_PORT'] == 8000) {
+    $baseurl = $_SERVER['REMOTE_ADDR'] . ':' . $_SERVER['SERVER_PORT'];
+}
+
 return array(
-    'site.baseurl'      => 'http://www.royopa.url.ph',   // Site URL (Global)
+    'site.baseurl'      => $baseurl,   // Site URL (Global)
     'site.name'         => 'Royopa Blog',   // Site name (Global)
     'site.title'        => 'PHP Flat-file blog engine',  // Site default title (Global)
     'site.description'  => 'Blog do Royopa feito em TextPress',  // Site default description (Global)

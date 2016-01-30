@@ -31,7 +31,7 @@ command:
 composer run
 ```
 
-Then, browse to http://localhost:8000/
+Then, browse to [http://localhost:8000/](http://localhost:8000/)
 
 ## Deploy
 
