@@ -175,4 +175,4 @@ Links usados para fazer esse artigo:
 
 [https://github.com/ezimuel/PHP-design-patterns/blob/master/Proxy.php](https://github.com/ezimuel/PHP-design-patterns/blob/master/Proxy.php)
 [https://sourcemaking.com/design_patterns/proxy/php](https://sourcemaking.com/design_patterns/proxy/php)
-[]()
+[http://www.tutorialspoint.com/design_pattern/proxy_pattern.htm](http://www.tutorialspoint.com/design_pattern/proxy_pattern.htm)
