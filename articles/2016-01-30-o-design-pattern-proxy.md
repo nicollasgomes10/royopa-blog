@@ -53,4 +53,3 @@ Segue abaixo os links usados para fazer esse artigo:
 [http://www.oodesign.com/proxy-pattern.html](http://www.oodesign.com/proxy-pattern.html)
 
 [https://sourcemaking.com/design_patterns/proxy](https://sourcemaking.com/design_patterns/proxy)
-
