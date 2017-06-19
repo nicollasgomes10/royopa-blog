@@ -53,7 +53,7 @@ Se seu branch local não tiver nenhum commit único, o Git em vez disso fará um
 
 ***Dica:*** Sincronizar o seu fork somente atualiza a sua cópia local do repositório. Para atualizar seu fork no GitHub, você precisa fazer um push das suas alterações.
 
-Mais informações podem ser obtidas no [documentação do Silex][1].
+Mais informações podem ser obtidas no [documentação do Git Hub][1].
 
 [1]: https://help.github.com/articles/syncing-a-fork/
 [2]: https://github.com
