@@ -57,4 +57,4 @@ Mais informações podem ser obtidas no [documentação do Silex][1].
 
 [1]: https://help.github.com/articles/syncing-a-fork/
 [2]: https://github.com
-[3]: https://help.github.com/articles/configurando-um-remote-para-um-fork/
+[3]: http://www.royopa.url.ph/2015/03/13/configurando-um-remote-para-um-fork
