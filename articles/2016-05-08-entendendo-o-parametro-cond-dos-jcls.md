@@ -1,6 +1,16 @@
-=============================================
+{
+"title" : "Understanding and Coding JCL COND= Parameters",
+"author":"Royopa",
+"date":"08-05-2016",
+"tag":"mainframe, JCL",
+"slug" : "understanding-and-coding-jcl-cond-parameters",
+"category":"Mainframe"
+}
+
+
 Understanding and Coding JCL COND= Parameters
 =============================================
+
 -Ian! D. Allen - idallen@idallen.ca - www.idallen.com
 
 JCL COND codes are used on EXEC statements to skip steps if any of
